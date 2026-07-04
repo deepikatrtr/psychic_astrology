@@ -7,51 +7,51 @@ const EMAIL = 'thebestastrologerlondon@gmail.com';
 
 const serviceSeo = {
   love: {
-    name: 'Get Ex-Love Back Guidance',
+    name: 'Reconnect With Your Ex Guidance',
     description: 'Confidential psychic astrology and relationship guidance in London for people seeking clarity, healing and a positive path after separation.'
   },
   negativity: {
-    name: 'Negative Entity Removal',
+    name: 'Negative Energy Clearing',
     description: 'Explore private spiritual cleansing and negative energy guidance in London, approached with care, respect and personalised psychic insight.'
   },
   'love-spell-caster': {
-    name: 'Love Spell & Relationship Guidance',
+    name: 'Love Spell Services',
     description: 'Receive confidential spiritual and psychic guidance in London for love, emotional connection and relationship concerns.'
   },
   'husband-wife-problems': {
-    name: 'Husband & Wife Problem Guidance',
+    name: 'Husband & Wife Relationship Counseling',
     description: 'Private psychic astrology consultations for marriage communication, emotional distance, trust and relationship harmony.'
   },
   'marriage-problems': {
-    name: 'Marriage Problem Astrology',
+    name: 'Marriage Relationship Guidance',
     description: 'Personalised marriage astrology and spiritual guidance in London for compatibility, family concerns and a clearer way forward.'
   },
   'black-magic-removal': {
-    name: 'Black Magic Removal Guidance',
+    name: 'Spiritual Cleansing',
     description: 'Confidential spiritual protection, energy cleansing and psychic guidance in London for concerns about harmful or negative influences.'
   },
   'evil-spirit-removal': {
-    name: 'Evil Spirit Removal Guidance',
+    name: 'Spiritual Protection',
     description: 'Private spiritual cleansing and protection consultations in London, with a respectful and personalised approach to your concerns.'
   },
   'evil-eye-removal': {
-    name: 'Evil Eye Removal & Protection',
+    name: 'Evil Eye Protection',
     description: 'Personalised evil eye cleansing, spiritual protection and psychic guidance for clients in London and worldwide.'
   },
   'spiritual-healing': {
-    name: 'Spiritual Healing in London',
+    name: 'Spiritual Healing',
     description: 'Restore calm and balance through personalised spiritual healing, energy guidance, meditation and psychic astrology in London.'
   },
   'psychic-reading': {
-    name: 'Psychic Reading in London',
+    name: 'Online Psychic Reading',
     description: 'Book a confidential psychic reading in London for intuitive insight into love, relationships, life direction and personal wellbeing.'
   },
   'love-marriage-solution': {
-    name: 'Love Marriage Astrology Guidance',
+    name: 'Love Marriage Guidance',
     description: 'Confidential psychic astrology guidance for love marriage, compatibility, family concerns and emotional clarity.'
   },
   'breakup-solution': {
-    name: 'Breakup & Relationship Healing',
+    name: 'Breakup Recovery Guidance',
     description: 'Compassionate psychic and spiritual guidance in London for breakup recovery, relationship clarity and emotional healing.'
   }
 };

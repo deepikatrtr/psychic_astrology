@@ -24,7 +24,7 @@ export default function About({ navigateTo }) {
     { icon: <Heart size={24} />, t: "Love & Relationship", d: "Resolve love problems, reunite with your partner and heal broken relationships." },
     { icon: <Gem size={24} />, t: "Marriage Astrology", d: "Find the right match, overcome delays and bring harmony in married life." },
     { icon: <Briefcase size={24} />, t: "Career & Business", d: "Get guidance for career growth, job success and business prosperity." },
-    { icon: <Shield size={24} />, t: "Black Magic Removal", d: "Remove negative energies, evil eye, curse and harmful occult effects." },
+    { icon: <Shield size={24} />, t: "Spiritual Cleansing", d: "Remove negative energies, evil eye, curse and harmful occult effects." },
     { icon: <Flower2 size={24} />, t: "Spiritual Healing", d: "Chakra healing, energy cleansing and restoring spiritual balance." },
     { icon: <Flame size={24} />, t: "Psychic Remedies", d: "Powerful mantras, spiritual rituals and customised guidance for lasting results." }
   ];

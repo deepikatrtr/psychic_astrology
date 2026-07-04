@@ -38,49 +38,49 @@ export default function ServiceDetail({ slug, navigateTo }) {
   const services = [
     { 
       slug: "love", 
-      title: "Get Ex-Love Back", 
+      title: "Reconnect With Your Ex", 
       icon: <Heart size={24} />,
       description: "Powerful psychic guidance, ancient mantras and personalised rituals to bring back lost love and rekindle the bond." 
     },
     { 
       slug: "negativity", 
-      title: "Negative Entity Removal", 
+      title: "Negative Energy Clearing", 
       icon: <Shield size={24} />,
       description: "Cleanse your aura, home and energy field through proven spiritual purification rituals and divine fire ceremonies." 
     },
     { 
       slug: "love-spell-caster", 
-      title: "Love Spell Caster", 
+      title: "Love Spell Services", 
       icon: <Sparkles size={24} />,
       description: "Time-tested love spells crafted by a master spiritualist to attract, bind and deepen romantic love." 
     },
     { 
       slug: "husband-wife-problems", 
-      title: "Husband & Wife Problems", 
+      title: "Husband & Wife Relationship Counseling", 
       icon: <CheckCircle2 size={24} />,
       description: "Restore harmony, trust and love within your marriage through psychic guidance, mantras and spiritual remedies." 
     },
     { 
       slug: "marriage-problems", 
-      title: "Marriage Problems", 
+      title: "Marriage Relationship Guidance", 
       icon: <Globe size={24} />,
       description: "Solve marriage roadblocks, family disputes, in-law tensions and astrological doshas blocking your union." 
     },
     { 
       slug: "black-magic-removal", 
-      title: "Black Magic Removal", 
+      title: "Spiritual Cleansing", 
       icon: <Zap size={24} />,
       description: "Identify and dissolve black magic with powerful counter-rituals, divine protection and lifelong shielding." 
     },
     { 
       slug: "evil-spirit-removal", 
-      title: "Evil Spirit Removal", 
+      title: "Spiritual Protection", 
       icon: <Shield size={24} />,
       description: "Free yourself, family or home from evil spirit attachments through powerful banishing rituals." 
     },
     { 
       slug: "evil-eye-removal", 
-      title: "Evil Eye Removal", 
+      title: "Evil Eye Protection", 
       icon: <Sparkles size={24} />,
       description: "Detect and dispel the effects of the evil eye with divine remedies, amulets and protective mantras." 
     },
@@ -92,19 +92,19 @@ export default function ServiceDetail({ slug, navigateTo }) {
     },
     { 
       slug: "psychic-reading", 
-      title: "Psychic Reading", 
+      title: "Online Psychic Reading", 
       icon: <HelpCircle size={24} />,
       description: "Insight into your past, present and future through gifted psychic intuition and tarot wisdom." 
     },
     { 
       slug: "love-marriage-solution", 
-      title: "Love Marriage Solution", 
+      title: "Love Marriage Guidance", 
       icon: <Globe size={24} />,
       description: "Overcome family resistance, social pressure and astrological doshas blocking your love marriage." 
     },
     { 
       slug: "breakup-solution", 
-      title: "Breakup Problem Solution", 
+      title: "Breakup Recovery Guidance", 
       icon: <Heart size={24} />,
       description: "Heal the wounds of breakup and reopen the path to reconciliation with proven psychic guidance." 
     }
@@ -112,51 +112,51 @@ export default function ServiceDetail({ slug, navigateTo }) {
 
   const currentService = services.find(s => s.slug === slug) || services[0];
 
-  // Custom Content: Ex-Love Back
+  // Custom Content: Reconnect With Your Ex
   const exLoveContent = [
     {
-      h: "Find Solution for How to Get Ex-Love Back with Guidance by the Best Astrologer in London",
-      p: "Relationships can sometimes become difficult because of misunderstandings, emotional distance, or communication issues. During these challenging moments, many people look for guidance and emotional clarity to better understand their love life. The Best Astrologer in London offers spiritual and astrology-based consultations for individuals who wish to explore ways to Get Ex-Love Back and improve their relationship journey in a positive and supportive manner."
+      h: "Find Solution for How to Reconnect With Your Ex with Guidance by the Best Astrologer in London",
+      p: "Relationships can sometimes become difficult because of misunderstandings, emotional distance, or communication issues. During these challenging moments, many people look for guidance and emotional clarity to better understand their love life. The Best Astrologer in London offers spiritual and astrology-based consultations for individuals who wish to explore ways to Reconnect With Your Ex and improve their relationship journey in a positive and supportive manner."
     },
     {
-      h: "What Astrology Solutions the Best Astrologer in London Provides for Getting Ex-Love Back?",
+      h: "What Astrology Solutions the Best Astrologer in London Provides for Reconnecting With Your Ex?",
       p: "Every relationship has its own story, and people often seek different ways to reconnect with their emotions after a breakup. The Best Astrologer in London provides personalized consultations focused on love, relationships, and emotional well-being. His approach is designed to help individuals gain a better understanding of their relationship concerns while exploring spiritual guidance and astrology insights. People searching online for ways to Get Back Together With Ex often look for experienced advisors who offer private and respectful consultations."
     },
     {
       h: "How the Best Astrologer in London Helps With Reuniting With an Ex-Partner",
-      p: "Love problems can create stress and confusion in daily life. The Best Astrologer in London offers astrology consultations that focus on relationship compatibility, emotional understanding, and communication guidance. Whether you are facing trust issues, misunderstandings, or emotional distance, spiritual consultation may help you explore feelings with a calm and balanced perspective. Many individuals interested in topics related to Get Ex-Love Back choose astrology guidance as a way to seek emotional support and relationship direction."
+      p: "Love problems can create stress and confusion in daily life. The Best Astrologer in London offers astrology consultations that focus on relationship compatibility, emotional understanding, and communication guidance. Whether you are facing trust issues, misunderstandings, or emotional distance, spiritual consultation may help you explore feelings with a calm and balanced perspective. Many individuals interested in topics related to Reconnect With Your Ex choose astrology guidance as a way to seek emotional support and relationship direction."
     },
     {
       h: "What Love Problem Solutions Does the Best Astrologer in London Provide?",
       p: "The Best Astrologer in London provides confidential and personalized consultations for clients worldwide. His sessions are designed to help people discuss relationship concerns in a comfortable environment. Every consultation is based on individual situations and personal experiences. People looking to Get Back Together With Ex often prefer guidance that focuses on emotional awareness, positive communication, and self-reflection instead of unrealistic promises."
     },
     {
-      h: "How to Book Consultation for Ex-Love Back?",
-      p: "Booking a consultation with the Best Astrologer in London for relationship guidance is simple and convenient. You can connect by phone, WhatsApp, or online inquiry to discuss concerns related to love, breakup, or emotional connection. During the consultation, you can share your relationship situation privately and receive personalized spiritual and astrology-based guidance tailored to your needs. Whether you are looking for clarity about the relationship or exploring ways to Get Ex-Love Back and Get Back Together With Ex, the consultation process is designed to provide a comfortable and confidential experience."
+      h: "How to Book Consultation to Reconnect With Your Ex?",
+      p: "Booking a consultation with the Best Astrologer in London for relationship guidance is simple and convenient. You can connect by phone, WhatsApp, or online inquiry to discuss concerns related to love, breakup, or emotional connection. During the consultation, you can share your relationship situation privately and receive personalized spiritual and astrology-based guidance tailored to your needs. Whether you are looking for clarity about the relationship or exploring ways to Reconnect With Your Ex and Get Back Together With Ex, the consultation process is designed to provide a comfortable and confidential experience."
     }
   ];
 
-  // Custom Content: Negative Entity Removal
+  // Custom Content: Negative Energy Clearing
   const negativityContent = [
     {
-      h: "Know How to Remove Negative Entity - (Evil Spirit, Evil Eye, Voodoo & Witchcraft)",
-      p: "Many people across the UK experience an unexplained heaviness in their lives - persistent low energy, recurring bad luck, emotional blockages, or a feeling that something unseen is holding them back. In spiritual traditions, these experiences are sometimes associated with negative energetic influences or attachments. Negative entity removal is a dedicated spiritual practice focused on identifying, cleansing, and releasing these unwanted influences so that individuals can move forward with greater clarity and peace."
+      h: "Know How to Clear Negative Energy - (Evil Spirit, Evil Eye, Voodoo & Witchcraft)",
+      p: "Many people across the UK experience an unexplained heaviness in their lives - persistent low energy, recurring bad luck, emotional blockages, or a feeling that something unseen is holding them back. In spiritual traditions, these experiences are sometimes associated with negative energetic influences or attachments. Negative energy clearing is a dedicated spiritual practice focused on identifying, cleansing, and releasing these unwanted influences so that individuals can move forward with greater clarity and peace."
     },
     {
       h: "How the Best Astrologer in London Performs Spiritual Cleansing",
-      p: "The Best Astrologer in London understands that every individual's spiritual journey is unique and offers a compassionate, personalised approach to negative entity removal, drawing on ancient spiritual knowledge and years of dedicated practice. Each session begins with a thorough spiritual assessment to understand the nature of the energetic disturbance, allowing for a targeted and respectful cleansing process tailored to your specific circumstances."
+      p: "The Best Astrologer in London understands that every individual's spiritual journey is unique and offers a compassionate, personalised approach to negative energy clearing, drawing on ancient spiritual knowledge and years of dedicated practice. Each session begins with a thorough spiritual assessment to understand the nature of the energetic disturbance, allowing for a targeted and respectful cleansing process tailored to your specific circumstances."
     },
     {
-      h: "What are the Signs & Benefits of Negative Entity Removal?",
-      p: "There are several experiences that may indicate the presence of unwanted energetic attachments. These can include sudden changes in mood or behaviour, recurring nightmares or disturbed sleep, difficulty maintaining positive relationships, or a persistent sense of being watched or followed. If you have been experiencing any of these without a clear explanation, exploring negative entity removal with the Best Astrologer in London may offer the insight and relief you have been searching for."
+      h: "What are the Signs & Benefits of Negative Energy Clearing?",
+      p: "There are several experiences that may indicate the presence of unwanted energetic attachments. These can include sudden changes in mood or behaviour, recurring nightmares or disturbed sleep, difficulty maintaining positive relationships, or a persistent sense of being watched or followed. If you have been experiencing any of these without a clear explanation, exploring negative energy clearing with the Best Astrologer in London may offer the insight and relief you have been searching for."
     },
     {
       h: "What to Expect During Evil Spirit, Evil Eye Cleansing Session?",
-      p: "The Best Astrologer in London is committed to providing a safe, respectful, and confidential experience for every client. The negative entity removal process is approached with sensitivity, cultural awareness, and deep spiritual integrity. Whether you are new to spiritual practices or have explored them for years, you will be welcomed without judgement. Each session works to restore harmony and balance, helping clients feel grounded, protected, and spiritually renewed."
+      p: "The Best Astrologer in London is committed to providing a safe, respectful, and confidential experience for every client. The negative energy clearing process is approached with sensitivity, cultural awareness, and deep spiritual integrity. Whether you are new to spiritual practices or have explored them for years, you will be welcomed without judgement. Each session works to restore harmony and balance, helping clients feel grounded, protected, and spiritually renewed."
     },
     {
       h: "Take the First Step Towards Spiritual Freedom Today",
-      p: "If you are ready to explore the possibility of negative entity removal and reclaim your sense of wellbeing, the Best Astrologer in London is here to guide you. Serving clients across the UK and worldwide, consultations are thoughtful, professional, and deeply rooted in spiritual tradition. Reach out today to schedule your personal session and begin your journey towards a lighter, more balanced life. Your path to clarity and inner peace starts with a single conversation."
+      p: "If you are ready to explore the possibility of negative energy clearing and reclaim your sense of wellbeing, the Best Astrologer in London is here to guide you. Serving clients across the UK and worldwide, consultations are thoughtful, professional, and deeply rooted in spiritual tradition. Reach out today to schedule your personal session and begin your journey towards a lighter, more balanced life. Your path to clarity and inner peace starts with a single conversation."
     }
   ];
 
@@ -210,7 +210,7 @@ export default function ServiceDetail({ slug, navigateTo }) {
           {/* Main Left Content */}
           <div>
             
-            {/* RENDER CUSTOM EX-LOVE BACK DETAILS */}
+            {/* RENDER CUSTOM RECONNECT WITH YOUR EX DETAILS */}
             {slug === 'love' && (
               <div style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
                 {exLoveContent.map((sec, i) => (
@@ -225,7 +225,7 @@ export default function ServiceDetail({ slug, navigateTo }) {
               </div>
             )}
 
-            {/* RENDER CUSTOM NEGATIVE ENTITY REMOVAL DETAILS */}
+            {/* RENDER CUSTOM NEGATIVE ENERGY CLEARING DETAILS */}
             {slug === 'negativity' && (
               <div style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
                 {negativityContent.map((sec, i) => (

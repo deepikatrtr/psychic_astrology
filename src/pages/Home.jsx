@@ -104,35 +104,35 @@ export default function Home({ navigateTo }) {
   // Hero Slider Data
   const slides = [
     {
-      title: "Get Ex-Love Back",
+      title: "Reconnect With Your Ex",
       tagline: "Reunite With Ex-Partner Through Powerful Astrology Remedies",
       slug: "love",
       description: "Powerful psychic guidance, ancient mantras and personalised rituals to bring back lost love and rekindle the bond.",
       image: imgLove
     },
     {
-      title: "Negative Entity Removal",
+      title: "Negative Energy Clearing",
       tagline: "Cleanse Your Aura, Restore Your Inner Light",
       slug: "negativity",
       description: "Cleanse your aura, home and energy field through proven spiritual purification rituals and divine fire ceremonies.",
       image: imgNegativity
     },
     {
-      title: "Black Magic Removal",
+      title: "Spiritual Cleansing",
       tagline: "Break Every Curse - Reclaim Your Divine Protection",
       slug: "black-magic-removal",
       description: "Identify and dissolve black magic with powerful counter-rituals, divine protection and lifelong shielding.",
       image: imgBlackMagic
     },
     {
-      title: "Husband Wife Problem",
+      title: "Husband & Wife Relationship Counseling",
       tagline: "Heal The Bond, Rekindle The Love",
       slug: "husband-wife-problems",
       description: "Restore harmony, trust and love within your marriage through psychic guidance, mantra and spiritual remedies.",
       image: imgHusbandWife
     },
     {
-      title: "Breakup Problem Solution",
+      title: "Breakup Recovery Guidance",
       tagline: "End The Distance, Begin Again",
       slug: "breakup-solution",
       description: "Heal the wounds of breakup and reopen the path to reconciliation with proven psychic guidance.",
@@ -142,18 +142,18 @@ export default function Home({ navigateTo }) {
 
   // Services List Data
   const services = [
-    { slug: "love", title: "Get Ex-Love Back", short: "Reunite with lost love", icon: <Heart size={24} /> },
-    { slug: "negativity", title: "Negative Entity Removal", short: "Cleanse your aura & home", icon: <Shield size={24} /> },
-    { slug: "love-spell-caster", title: "Love Spell Caster", short: "Authentic divine love spells", icon: <Sparkles size={24} /> },
-    { slug: "husband-wife-problems", title: "Husband & Wife Problems", short: "Heal your marriage bond", icon: <CheckCircle2 size={24} /> },
-    { slug: "marriage-problems", title: "Marriage Problems", short: "Restore family harmony", icon: <Globe size={24} /> },
-    { slug: "black-magic-removal", title: "Black Magic Removal", short: "Permanent counter-protection", icon: <Zap size={24} /> },
-    { slug: "evil-spirit-removal", title: "Evil Spirit Removal", short: "Free yourself & your home", icon: <Shield size={24} /> },
-    { slug: "evil-eye-removal", title: "Evil Eye Removal", short: "Nazar suraksha", icon: <Sparkles size={24} /> },
+    { slug: "love", title: "Reconnect With Your Ex", short: "Reunite with lost love", icon: <Heart size={24} /> },
+    { slug: "negativity", title: "Negative Energy Clearing", short: "Cleanse your aura & home", icon: <Shield size={24} /> },
+    { slug: "love-spell-caster", title: "Love Spell Services", short: "Authentic divine love spells", icon: <Sparkles size={24} /> },
+    { slug: "husband-wife-problems", title: "Husband & Wife Relationship Counseling", short: "Heal your marriage bond", icon: <CheckCircle2 size={24} /> },
+    { slug: "marriage-problems", title: "Marriage Relationship Guidance", short: "Restore family harmony", icon: <Globe size={24} /> },
+    { slug: "black-magic-removal", title: "Spiritual Cleansing", short: "Permanent counter-protection", icon: <Zap size={24} /> },
+    { slug: "evil-spirit-removal", title: "Spiritual Protection", short: "Free yourself & your home", icon: <Shield size={24} /> },
+    { slug: "evil-eye-removal", title: "Evil Eye Protection", short: "Nazar suraksha", icon: <Sparkles size={24} /> },
     { slug: "spiritual-healing", title: "Spiritual Healing", short: "Mind, body & soul alignment", icon: <Heart size={24} /> },
-    { slug: "psychic-reading", title: "Psychic Reading", short: "Divine intuitive clarity", icon: <HelpCircle size={24} /> },
-    { slug: "love-marriage-solution", title: "Love Marriage Solution", short: "Bless your union", icon: <Globe size={24} /> },
-    { slug: "breakup-solution", title: "Breakup Problem Solution", short: "Mend broken hearts", icon: <Heart size={24} /> }
+    { slug: "psychic-reading", title: "Online Psychic Reading", short: "Divine intuitive clarity", icon: <HelpCircle size={24} /> },
+    { slug: "love-marriage-solution", title: "Love Marriage Guidance", short: "Bless your union", icon: <Globe size={24} /> },
+    { slug: "breakup-solution", title: "Breakup Recovery Guidance", short: "Mend broken hearts", icon: <Heart size={24} /> }
   ];
 
   // Client Reviews Data (12 Symmetrical Testimonials)
@@ -221,7 +221,7 @@ export default function Home({ navigateTo }) {
     {
       name: "David Miller",
       loc: "Business Consultant",
-      text: "The Best Astrologer in London's negativity removal havan brought immediate peace to my family. The bad dreams stopped, and positive vibes returned. Truly gifted spiritual healer.",
+      text: "The Best Astrologer in London's negative energy clearing havan brought immediate peace to my family. The bad dreams stopped, and positive vibes returned. Truly gifted spiritual healer.",
       initials: "DM"
     },
     {
@@ -248,18 +248,18 @@ export default function Home({ navigateTo }) {
   const handleContactSubmit = (e) => {
     e.preventDefault();
     const serviceLabels = {
-      love: "Ex-Love Back / Love Problems",
-      negativity: "Negative Entity Removal",
-      "love-spell-caster": "Love Spells Casting",
-      "husband-wife-problems": "Husband-Wife Solutions",
-      "marriage-problems": "Marriage Problems",
-      "black-magic-removal": "Black Magic Removal",
-      "evil-spirit-removal": "Evil Spirit Cleansing",
+      love: "Reconnect With Your Ex / Love Problems",
+      negativity: "Negative Energy Clearing",
+      "love-spell-caster": "Love Spell Services",
+      "husband-wife-problems": "Husband & Wife Relationship Counseling",
+      "marriage-problems": "Marriage Relationship Guidance",
+      "black-magic-removal": "Spiritual Cleansing",
+      "evil-spirit-removal": "Spiritual Protection",
       "evil-eye-removal": "Evil Eye Protection",
-      "spiritual-healing": "Spiritual Aura Healing",
-      "psychic-reading": "Intuitive Psychic Reading",
-      "love-marriage-solution": "Love Marriage solutions",
-      "breakup-solution": "Breakup Solutions"
+      "spiritual-healing": "Spiritual Healing",
+      "psychic-reading": "Online Psychic Reading",
+      "love-marriage-solution": "Love Marriage Guidance",
+      "breakup-solution": "Breakup Recovery Guidance"
     };
 
     const selectedService = serviceLabels[contactForm.service] || contactForm.service;
@@ -1219,18 +1219,18 @@ I would like to book a confidential consultation.
                       onFocus={(e) => e.target.style.borderColor = 'var(--gold)'}
                       onBlur={(e) => e.target.style.borderColor = 'rgba(212, 175, 55, 0.25)'}
                     >
-                      <option value="love">Ex-Love Back</option>
-                      <option value="negativity">Negativity Removal</option>
-                      <option value="love-spell-caster">Love Spells</option>
-                      <option value="husband-wife-problems">Husband-Wife Solutions</option>
-                      <option value="marriage-problems">Marriage Problems</option>
-                      <option value="black-magic-removal">Black Magic Removal</option>
-                      <option value="evil-spirit-removal">Evil Spirit Cleansing</option>
+                      <option value="love">Reconnect With Your Ex</option>
+                      <option value="negativity">Negative Energy Clearing</option>
+                      <option value="love-spell-caster">Love Spell Services</option>
+                      <option value="husband-wife-problems">Husband & Wife Relationship Counseling</option>
+                      <option value="marriage-problems">Marriage Relationship Guidance</option>
+                      <option value="black-magic-removal">Spiritual Cleansing</option>
+                      <option value="evil-spirit-removal">Spiritual Protection</option>
                       <option value="evil-eye-removal">Evil Eye Protection</option>
-                      <option value="spiritual-healing">Spiritual Aura Healing</option>
-                      <option value="psychic-reading">Psychic Reading</option>
-                      <option value="love-marriage-solution">Love Marriage</option>
-                      <option value="breakup-solution">Breakup Solutions</option>
+                      <option value="spiritual-healing">Spiritual Healing</option>
+                      <option value="psychic-reading">Online Psychic Reading</option>
+                      <option value="love-marriage-solution">Love Marriage Guidance</option>
+                      <option value="breakup-solution">Breakup Recovery Guidance</option>
                     </select>
                   </div>
                 </div>

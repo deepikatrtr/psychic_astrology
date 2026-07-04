@@ -117,8 +117,8 @@ export default function Footer({ navigateTo }) {
                 { label: 'Career & Business', slug: 'career' },
                 { label: 'Health & Wellbeing', slug: 'health' },
                 { label: 'Family & Children', slug: 'family' },
-                { label: 'Negative Energy Removal', slug: 'negativity' },
-                { label: 'Black Magic Removal', slug: 'black-magic-removal' },
+                { label: 'Negative Energy Clearing', slug: 'negativity' },
+                { label: 'Spiritual Cleansing', slug: 'black-magic-removal' },
                 { label: 'Spiritual Healing', slug: 'spiritual' },
                 { label: 'Kundli & Horoscope', slug: 'kundli' }
               ].map(s => (

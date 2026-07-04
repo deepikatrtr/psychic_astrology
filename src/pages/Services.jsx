@@ -55,7 +55,7 @@ export default function Services({ navigateTo }) {
     { 
       slug: "love", 
       num: "01",
-      title: "Get Ex-Love Back", 
+      title: "Reconnect With Your Ex", 
       short: "Reunite with lost love through powerful mantras and rituals.", 
       category: "love", 
       icon: <Heart size={16} fill="white" />,
@@ -64,7 +64,7 @@ export default function Services({ navigateTo }) {
     { 
       slug: "negativity", 
       num: "02",
-      title: "Negative Entity Removal", 
+      title: "Negative Energy Clearing", 
       short: "Cleanse your aura, home and energy field from negativity.", 
       category: "protection", 
       icon: <Shield size={16} fill="white" />,
@@ -73,7 +73,7 @@ export default function Services({ navigateTo }) {
     { 
       slug: "love-spell-caster", 
       num: "03",
-      title: "Love Spell Caster", 
+      title: "Love Spell Services", 
       short: "Authentic divine love spells to attract and deepen love.", 
       category: "healing", 
       icon: <Sparkles size={16} fill="white" />,
@@ -82,7 +82,7 @@ export default function Services({ navigateTo }) {
     { 
       slug: "husband-wife-problems", 
       num: "04",
-      title: "Husband & Wife Problems", 
+      title: "Husband & Wife Relationship Counseling", 
       short: "Restore harmony, trust and love within your marriage.", 
       category: "love", 
       icon: <Heart size={16} fill="white" />,
@@ -91,7 +91,7 @@ export default function Services({ navigateTo }) {
     { 
       slug: "marriage-problems", 
       num: "05",
-      title: "Marriage Problems", 
+      title: "Marriage Relationship Guidance", 
       short: "Solve marriage roadblocks and family disputes.", 
       category: "love", 
       icon: <Globe size={16} />,
@@ -100,7 +100,7 @@ export default function Services({ navigateTo }) {
     { 
       slug: "black-magic-removal", 
       num: "06",
-      title: "Black Magic Removal", 
+      title: "Spiritual Cleansing", 
       short: "Remove black magic and get lifelong protection.", 
       category: "protection", 
       icon: <Shield size={16} fill="white" />,
@@ -109,7 +109,7 @@ export default function Services({ navigateTo }) {
     { 
       slug: "evil-spirit-removal", 
       num: "07",
-      title: "Evil Spirit Removal", 
+      title: "Spiritual Protection", 
       short: "Free yourself and your home from evil spirit attachments.", 
       category: "protection", 
       icon: <Shield size={16} fill="white" />,
@@ -118,7 +118,7 @@ export default function Services({ navigateTo }) {
     { 
       slug: "evil-eye-removal", 
       num: "08",
-      title: "Evil Eye Removal", 
+      title: "Evil Eye Protection", 
       short: "Detect and remove evil eye with spiritual remedies.", 
       category: "protection", 
       icon: <Sparkles size={16} fill="white" />,
@@ -136,7 +136,7 @@ export default function Services({ navigateTo }) {
     { 
       slug: "psychic-reading", 
       num: "10",
-      title: "Psychic Reading", 
+      title: "Online Psychic Reading", 
       short: "Gain clarity about your past, present and future.", 
       category: "healing", 
       icon: <HelpCircle size={16} />,
@@ -145,7 +145,7 @@ export default function Services({ navigateTo }) {
     { 
       slug: "love-marriage-solution", 
       num: "11",
-      title: "Love Marriage Solution", 
+      title: "Love Marriage Guidance", 
       short: "Overcome obstacles and bless your love union.", 
       category: "love", 
       icon: <Globe size={16} />,
@@ -154,7 +154,7 @@ export default function Services({ navigateTo }) {
     { 
       slug: "breakup-solution", 
       num: "12",
-      title: "Breakup Problem Solution", 
+      title: "Breakup Recovery Guidance", 
       short: "Mend broken hearts and reopen the path to love.", 
       category: "love", 
       icon: <Heart size={16} fill="white" />,
