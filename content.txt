@@ -1,0 +1,848 @@
+
+======================================================
+PAGE / COMPONENT: Home
+======================================================
+
+},
+    { slug: "negativity", title: "Negative Entity Removal", short: "Cleanse your aura & home", icon:
+
+},
+    { slug: "love-spell-caster", title: "Love Spell Caster", short: "Authentic divine love spells", icon:
+
+},
+    { slug: "husband-wife-problems", title: "Husband & Wife Problems", short: "Heal your marriage bond", icon:
+
+},
+    { slug: "marriage-problems", title: "Marriage Problems", short: "Restore family harmony", icon:
+
+},
+    { slug: "black-magic-removal", title: "Black Magic Removal", short: "Permanent counter-protection", icon:
+
+},
+    { slug: "evil-spirit-removal", title: "Evil Spirit Removal", short: "Free yourself & your home", icon:
+
+},
+    { slug: "evil-eye-removal", title: "Evil Eye Removal", short: "Nazar suraksha", icon:
+
+},
+    { slug: "spiritual-healing", title: "Spiritual Healing", short: "Mind, body & soul alignment", icon:
+
+},
+    { slug: "psychic-reading", title: "Psychic Reading", short: "Divine intuitive clarity", icon:
+
+},
+    { slug: "love-marriage-solution", title: "Love Marriage Solution", short: "Bless your union", icon:
+
+},
+    { slug: "breakup-solution", title: "Breakup Problem Solution", short: "Mend broken hearts", icon:
+
+DIVINE PSYCHIC ASTROLOGY
+
+✦ E-DAY RESULTS
+
+✦ 100% CONFIDENTIALITY
+
+✦ 35+ YEARS OF MASTERY
+
+✦ 10,000+ LIVES TRANSFORMED
+
+✦ 10,000+ HAPPY REUNIONS
+
+✦ 100% PRIVACY
+
+✦ POWERFUL REMEDIES
+
+✦ EXPERT GUIDANCE
+
+✦ POSITIVE RESULTS
+
+✦ ALL OVER THE WORLD
+
+✦ 8:00 AM-8:00 PM
+
+Our Astrological Services
+
+Authentic psychic insight, ancient mantras and personalised spiritual guidance to help dissolve obstacles in your path.
+
+navigateTo('service-detail', s.slug)}
+              >
+
+LEARN DETAILS
+
+ABOUT GURUJI
+
+Spiritual Guidance By the Best Astrologer in London
+
+The Best Astrologer in London is a gifted psychic astrologer and spiritual healer with more than 35 years of mastery in solving love, relationship, marriage, family and life problems through powerful astrology, ancient mantras and spiritual remedies.
+
+Guided by generations of spiritual knowledge, Guruji combines deep psychic intuition with time-tested rituals to deliver lasting transformation. His guidance has brought peace, love and prosperity to thousands of families all over the world.
+
+"Every soul carries a karmic blueprint. With the right mantra, ritual and remedy, every obstacle can be dissolved - love returns, peace returns, light returns."
+
+BEST ASTROLOGER IN LONDON
+
+Stories of Transformation
+
+Trusted by thousands of individuals across the globe - hear their stories of transformation.
+
+Our Trusted 4-Step Healing Process
+
+A proven, divine pathway from suffering to absolute transformation.
+
+Frequently Asked Questions
+
+Have questions about how psychic and spiritual guidance works✦ Find answers here.
+
+setOpenFaq(isSelected ? null : i)}
+                >
+
+{isSelected && (
+
+);
+            })}
+
+Begin Your Spiritual Journey
+
+Connect with the Best Astrologer in London today. Get immediate solutions for love, family, health, and negative entities.
+
+Call Direct Line
+
++44 7722 131999
+
+Available daily from 8:00 AM to 8:00 PM.
+
+WhatsApp Instant Chat
+
+Chat with Guruji
+
+Average response time: 5 minutes. Secure & confidential.
+
+Confidential Email
+
+Send detailed documents or birth information. Replies are handled during 8:00 AM-8:00 PM working hours.
+
+Office Location
+
+241 High Street, Walthamstow, London E17 7BH
+
+Appointments available daily from 8:00 AM to 8:00 PM.
+
+Confidential Inquiry
+
+Please provide your birth details and describe your challenges below. Your details will be routed directly to Guruji.
+
+PHONE NUMBER
+
+EMAIL ADDRESS
+
+SELECT SERVICE
+
+Ex-Love Back
+
+Negativity Removal
+
+Love Spells
+
+Husband-Wife Solutions
+
+Marriage Problems
+
+Black Magic Removal
+
+Evil Spirit Cleansing
+
+Evil Eye Protection
+
+Spiritual Aura Healing
+
+Psychic Reading
+
+Love Marriage
+
+Breakup Solutions
+
+DESCRIBE YOUR PROBLEM
+
+SEND INQUIRY VIA WHATSAPP
+
+{successMsg && (
+
+âœ" Inquiry submitted! Connecting you to Guruji on WhatsApp...
+
+Get Ex-Love Back
+
+Reunite With Ex-Partner Through Powerful Astrology Remedies
+
+Powerful psychic guidance, ancient mantras and personalised rituals to bring back lost love and rekindle the bond.
+
+Negative Entity Removal
+
+Cleanse Your Aura, Restore Your Inner Light
+
+Cleanse your aura, home and energy field through proven spiritual purification rituals and divine fire ceremonies.
+
+Break Every Curse - Reclaim Your Divine Protection
+
+Identify and dissolve black magic with powerful counter-rituals, divine protection and lifelong shielding.
+
+Husband Wife Problem
+
+Heal The Bond, Rekindle The Love
+
+Restore harmony, trust and love within your marriage through psychic guidance, mantra and spiritual remedies.
+
+Breakup Problem Solution
+
+End The Distance, Begin Again
+
+Heal the wounds of breakup and reopen the path to reconciliation with proven psychic guidance.
+
+Reunite with lost love
+
+Cleanse your aura & home
+
+Love Spell Caster
+
+Authentic divine love spells
+
+Husband & Wife Problems
+
+Heal your marriage bond
+
+Restore family harmony
+
+Permanent counter-protection
+
+Evil Spirit Removal
+
+Free yourself & your home
+
+Evil Eye Removal
+
+Nazar suraksha
+
+Spiritual Healing
+
+Mind, body & soul alignment
+
+Divine intuitive clarity
+
+Love Marriage Solution
+
+Bless your union
+
+Mend broken hearts
+
+Priya Patel
+
+Financial Analyst
+
+Guruji helped me reunite with my ex-partner after a 2-year painful separation. His love spells are incredibly powerful, and his guidance kept me strong. Truly life-changing!
+
+Michael Smith
+
+Business Owner
+
+My business was facing severe losses due to negative energies. Guruji cleansed my office and recommended powerful protection charms. Within weeks, sales doubled. Highly recommended!
+
+Sandra Connor
+
+HR Specialist
+
+I was suffering from chronic anxiety and negative thoughts. Guruji
+
+Amit Malhotra
+
+Software Engineer
+
+The astrological chart analysis by Guruji solved all my marriage delays. He correctly identified a Manglik dosha and gave easy remedies. Now happily married. Thank you, Guruji!
+
+Karan Singh
+
+Marketing Director
+
+I was skeptical at first, but the Best Astrologer in London
+
+Deepika Rao
+
+Medical Professional
+
+The Best Astrologer in London
+
+Jessica Taylor
+
+Creative Director
+
+The Best Astrologer in London is a master of his craft. He predicted my relocation details down to the exact month. His honesty and confidentiality are what make him the best.
+
+Rajeev Sharma
+
+Real Estate Agent
+
+Guruji removed a long-standing court dispute blocker using powerful spiritual rituals. His predictions were accurate and his remedies gave immediate results. Absolutely blessed!
+
+Sarah Jenkins
+
+Teacher
+
+I was desperate to heal my marriage from constant disputes. Guruji
+
+Vikram Rathore
+
+Entrepreneur
+
+Guruji
+
+David Miller
+
+Business Consultant
+
+Elena Rostova
+
+Yoga Instructor
+
+The relationship healing energy sessions by Guruji completely mended our communication gaps. We feel more connected than ever. Excellent and gentle guidance.
+
+Is the consultation 100% confidential✦
+
+Absolutely. Every conversation with the Best Astrologer in London is treated with strict confidentiality. Your privacy is important to us.
+
+How long do the remedies take to show results✦
+
+Most clients see initial positive shifts within 7-21 days, with full transformation typically within 1-3 months depending on the complexity of the issue.
+
+Do I need to visit in person for a consultation✦
+
+No, Guruji serves clients globally over phone, WhatsApp and video call. Distance is no barrier to divine intervention.
+
+Are your remedies safe and ethical✦
+
+Yes. All psychic and spiritual remedies are performed with positive intention and cause absolutely no harm to anyone involved.
+
+What problems can you help solve✦
+
+Love and relationship issues, marriage problems, negative energy, family disputes, career and business obstacles, health concerns and more.
+
+How do I begin my consultation✦
+
+Simply call +44 7722 131999, message us on WhatsApp or fill our inquiry form. Guruji will personally connect with you.
+
+wrap
+
+100%
+
+LIVES TRANSFORMED
+
+YEARS OF MASTERY
+
+COUNTRIES SERVED
+
+SUCCESS RATE
+
+-20px
+
+anywhere
+
+
+======================================================
+PAGE / COMPONENT: About
+======================================================
+
+35+ YEARS OF MASTERY
+
+Best Astrologer in London
+
+A lifelong practitioner of psychic astrology, helping people overcome life's challenges through authentic insight, spiritual healing and powerful remedies.
+
+BOOK CONSULTATION
+
+{[
+              { icon:
+
+ABOUT GURUJI
+
+Guiding Souls.
+
+Transforming Lives.
+
+Best Astrologer in London comes from a sacred lineage of spiritual scholars and has dedicated his life to helping people find solutions to their problems. With deep knowledge of psychic astrology, Lal Kitab, Nadi Astrology and spiritual healing, Guruji has guided thousands of individuals and families towards peace, love, success and spiritual awakening.
+
+"Every problem has a solution. Every soul deserves peace."
+
+BEST ASTROLOGER IN LONDON
+
+OUR EXPERTISE
+
+THE DIVINE JOURNEY
+
+WHY CHOOSE GURUJI?
+
+WHAT PEOPLE SAY
+
+Ready To Transform Your Life?
+
+Connect with Guruji today and take the first step towards a happy, peaceful and successful life.
+
+BOOK CONSULTATION ON WHATSAPP
+
+Priya S.
+
+Guruji helped me reunite with my love after a long separation. His guidance changed my life completely.
+
+Rohit M.
+
+The remedies given by Guruji brought peace, success and happiness in my family. Thank you!
+
+Neha K.
+
+I was suffering from negative energy for years. Guruji
+
+-150px
+
+100%
+
+Years of Mastery
+
+Lives Transformed
+
+Countries Served
+
+Success Rate
+
+
+======================================================
+PAGE / COMPONENT: Services
+======================================================
+
+OUR SERVICES
+
+Sacred Solutions For
+
+Life's Challenges
+
+Psychic wisdom, powerful spiritual rituals and trusted guidance to bring peace, love, protection and prosperity into your life.
+
+{[
+              { icon:
+
+{[
+              ,
+              { label: 'Love & Relationship', id: 'love', icon:
+
+},
+              { label: 'Protection', id: 'protection', icon:
+
+},
+              { label: 'Healing & Guidance', id: 'healing', icon:
+
+navigateTo('service-detail', s.slug)}
+              >
+
+Ready To Transform Your Life?
+
+Connect with Guruji today and take the first step towards a happy, peaceful and successful life.
+
+BOOK CONSULTATION ON WHATSAPP
+
+Get Ex-Love Back
+
+Reunite with lost love through powerful mantras and rituals.
+
+Negative Entity Removal
+
+Cleanse your aura, home and energy field from negativity.
+
+Love Spell Caster
+
+Authentic divine love spells to attract and deepen love.
+
+Husband & Wife Problems
+
+Restore harmony, trust and love within your marriage.
+
+Marriage Problems
+
+Solve marriage roadblocks and family disputes.
+
+Black Magic Removal
+
+Remove black magic and get lifelong protection.
+
+Evil Spirit Removal
+
+Free yourself and your home from evil spirit attachments.
+
+Evil Eye Removal
+
+Detect and remove evil eye with spiritual remedies.
+
+Spiritual Healing
+
+Heal your mind, body & soul with divine energy.
+
+Psychic Reading
+
+Gain clarity about your past, present and future.
+
+Love Marriage Solution
+
+Overcome obstacles and bless your love union.
+
+Breakup Problem Solution
+
+Mend broken hearts and reopen the path to love.
+
+-150px
+
+100%
+
+Years of Mastery
+
+Lives Transformed
+
+Countries Served
+
+Success Rate
+
+wrap
+
+All Services
+
+Love & Relationship
+
+Protection
+
+Healing & Guidance
+
+auto
+
+
+======================================================
+PAGE / COMPONENT: ServiceDetail
+======================================================
+
+DIVINE SERVICE DETAILS
+
+{slug === 'love' && (
+
+)}
+
+            
+            {slug === 'negativity' && (
+
+)}
+
+            
+            {slug !== 'love' && slug !== 'negativity' && (
+
+The Psychic Healing Process
+
+Through deep ancestral rituals, powerful mantra recitations and personalized yantras, the Best Astrologer in London channels divine cosmic energy to dissolve the karmic blockages standing between you and the life you seek.
+
+Every case begins with a confidential reading of your birth chart and an intuitive psychic scan of your aura. From there, Guruji prescribes a precise combination of remedies - specific fasting days, powerful chants, gemstone recommendations, protective amulets and home cleansing rituals - tailored entirely to your specific situation.
+
+Detailed Rituals & Remedies Included
+
+What You Will Experience
+
+Three Stages of Psychic Healing
+
+The healing unfolds in three proven stages:
+
+(uncovering the spiritual root cause),
+
+(active mantras, rituals and energy work), and
+
+(long-term spiritual safeguards and amulets). Most clients begin to notice positive shifts within 7 to 21 days, with full results manifesting within 1-3 months.
+
+98% Success Rate
+
+From over 10,000+ consultations all over the world. Complete confidentiality.
+
+WhatsApp Chat
+
+Explore Other Services
+
+Get Ex-Love Back
+
+Powerful psychic guidance, ancient mantras and personalised rituals to bring back lost love and rekindle the bond.
+
+Negative Entity Removal
+
+Cleanse your aura, home and energy field through proven spiritual purification rituals and divine fire ceremonies.
+
+Love Spell Caster
+
+Time-tested love spells crafted by a master spiritualist to attract, bind and deepen romantic love.
+
+Husband & Wife Problems
+
+Restore harmony, trust and love within your marriage through psychic guidance, mantras and spiritual remedies.
+
+Marriage Problems
+
+Solve marriage roadblocks, family disputes, in-law tensions and astrological doshas blocking your union.
+
+Black Magic Removal
+
+Identify and dissolve black magic with powerful counter-rituals, divine protection and lifelong shielding.
+
+Evil Spirit Removal
+
+Free yourself, family or home from evil spirit attachments through powerful banishing rituals.
+
+Evil Eye Removal
+
+Detect and dispel the effects of the evil eye with divine remedies, amulets and protective mantras.
+
+Spiritual Healing
+
+Holistic energy healing using mantras, meditation, chakra balancing and divine intervention.
+
+Psychic Reading
+
+Insight into your past, present and future through gifted psychic intuition and tarot wisdom.
+
+Love Marriage Solution
+
+Overcome family resistance, social pressure and astrological doshas blocking your love marriage.
+
+Breakup Problem Solution
+
+Heal the wounds of breakup and reopen the path to reconciliation with proven psychic guidance.
+
+Find Solution for How to Get Ex-Love Back with Guidance by the Best Astrologer in London
+
+Relationships can sometimes become difficult because of misunderstandings, emotional distance, or communication issues. During these challenging moments, many people look for guidance and emotional clarity to better understand their love life. The Best Astrologer in London offers spiritual and astrology-based consultations for individuals who wish to explore ways to Get Ex-Love Back and improve their relationship journey in a positive and supportive manner.
+
+What Astrology Solutions the Best Astrologer in London Provides for Getting Ex-Love Back?
+
+Every relationship has its own story, and people often seek different ways to reconnect with their emotions after a breakup. The Best Astrologer in London provides personalized consultations focused on love, relationships, and emotional well-being. His approach is designed to help individuals gain a better understanding of their relationship concerns while exploring spiritual guidance and astrology insights. People searching online for ways to Get Back Together With Ex often look for experienced advisors who offer private and respectful consultations.
+
+How the Best Astrologer in London Helps With Reuniting With an Ex-Partner
+
+Love problems can create stress and confusion in daily life. The Best Astrologer in London offers astrology consultations that focus on relationship compatibility, emotional understanding, and communication guidance. Whether you are facing trust issues, misunderstandings, or emotional distance, spiritual consultation may help you explore feelings with a calm and balanced perspective. Many individuals interested in topics related to Get Ex-Love Back choose astrology guidance as a way to seek emotional support and relationship direction.
+
+What Love Problem Solutions Does the Best Astrologer in London Provide?
+
+The Best Astrologer in London provides confidential and personalized consultations for clients worldwide. His sessions are designed to help people discuss relationship concerns in a comfortable environment. Every consultation is based on individual situations and personal experiences. People looking to Get Back Together With Ex often prefer guidance that focuses on emotional awareness, positive communication, and self-reflection instead of unrealistic promises.
+
+How to Book Consultation for Ex-Love Back?
+
+Booking a consultation with the Best Astrologer in London for relationship guidance is simple and convenient. You can connect by phone, WhatsApp, or online inquiry to discuss concerns related to love, breakup, or emotional connection. During the consultation, you can share your relationship situation privately and receive personalized spiritual and astrology-based guidance tailored to your needs. Whether you are looking for clarity about the relationship or exploring ways to Get Ex-Love Back and Get Back Together With Ex, the consultation process is designed to provide a comfortable and confidential experience.
+
+Know How to Remove Negative Entity - (Evil Spirit, Evil Eye, Voodoo & Witchcraft)
+
+Many people across the UK experience an unexplained heaviness in their lives - persistent low energy, recurring bad luck, emotional blockages, or a feeling that something unseen is holding them back. In spiritual traditions, these experiences are sometimes associated with negative energetic influences or attachments. Negative entity removal is a dedicated spiritual practice focused on identifying, cleansing, and releasing these unwanted influences so that individuals can move forward with greater clarity and peace.
+
+How the Best Astrologer in London Performs Spiritual Cleansing
+
+The Best Astrologer in London understands that every individual
+
+What are the Signs & Benefits of Negative Entity Removal?
+
+There are several experiences that may indicate the presence of unwanted energetic attachments. These can include sudden changes in mood or behaviour, recurring nightmares or disturbed sleep, difficulty maintaining positive relationships, or a persistent sense of being watched or followed. If you have been experiencing any of these without a clear explanation, exploring negative entity removal with the Best Astrologer in London may offer the insight and relief you have been searching for.
+
+What to Expect During Evil Spirit, Evil Eye Cleansing Session?
+
+The Best Astrologer in London is committed to providing a safe, respectful, and confidential experience for every client. The negative entity removal process is approached with sensitivity, cultural awareness, and deep spiritual integrity. Whether you are new to spiritual practices or have explored them for years, you will be welcomed without judgement. Each session works to restore harmony and balance, helping clients feel grounded, protected, and spiritually renewed.
+
+Take the First Step Towards Spiritual Freedom Today
+
+If you are ready to explore the possibility of negative entity removal and reclaim your sense of wellbeing, the Best Astrologer in London is here to guide you. Serving clients across the UK and worldwide, consultations are thoughtful, professional, and deeply rooted in spiritual tradition. Reach out today to schedule your personal session and begin your journey towards a lighter, more balanced life. Your path to clarity and inner peace starts with a single conversation.
+
+100%
+
+
+======================================================
+PAGE / COMPONENT: Book
+======================================================
+
+{!embedded &&
+
+SCHEDULE YOUR SESSION
+
+Book An Appointment
+
+Choose a convenient time that works for you - Guruji will personally reach out to confirm your session.
+
+Divine Consultation Request
+
+setForm()}
+                    style=
+                  />
+
+setForm()}
+                  style=
+                />
+
+CONFIRM ON WHATSAPP
+
+100%
+
+
+======================================================
+PAGE / COMPONENT: Contact
+======================================================
+
+Trusted all over the world
+
+Divine Guidance
+
+For A Better Tomorrow
+
+Accurate astrology, healing solutions and positive guidance to bring
+                clarity, peace and success into your life.
+
+Private &amp; confidential
+
+Working hours
+
+Lives transformed
+
+showToast('Opening secure line to Guruji...')}
+                >
+
+Call Guruji
+
+Lives Transformed
+
+showToast('Opening secure line to Guruji...')}
+            >
+
+Direct Phone Line
+
++44 7722 131999
+
+Available daily · 8:00 AM-8:00 PM
+
+Walthamstow, London · All Over the World
+
+Available now
+
+);
+            })}
+
+Guiding Your Life Towards Success &amp; Peace
+
+Private Consultation
+
+Book Your Session With Guruji
+
+Choose a convenient date and time. Your request opens securely in
+            WhatsApp for personal confirmation.
+
+Your Journey
+
+A Clear Path From Concern To Clarity
+
+Chat Privately
+
+Email Us
+
+Book a Session
+
+Working Hours
+
+Quick Response
+
+Worldwide Reach
+
+
+======================================================
+PAGE / COMPONENT: Navbar
+======================================================
+
+handleNav('home')}
+          style={{
+            cursor: 'pointer',
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center',
+            gap: '12px'
+          }}
+        >
+
+BEST ASTROLOGER IN LONDON
+
+PSYCHIC ASTROLOGY & HEALING
+
+);
+            })}
+
+CALL GURUJI
+
+{isOpen && (
+
+);
+          })}
+
+CALL NOW: +44 7722 131999
+
+Home
+
+About
+
+Services
+
+Contact Us
+
+100%
+
+
+======================================================
+PAGE / COMPONENT: Footer
+======================================================
+
+BEST ASTROLOGER IN LONDON
+
+PSYCHIC ASTROLOGY & HEALING
+
+Sharing psychic guidance and powerful spiritual healing with seekers all over the world, backed by more than 35 years of mastery.
+
+4.9 · 2,400+ reviews
+
+Quick Navigation
+
+Divine Services
+
+Divine Sanctuary
+
+241 High Street,
+
+Walthamstow, London
+
++44 7722 131999
+
+8:00 AM-8:00 PM · All Over the World
+
+©  Best Astrologer in London. All Psychic Astrology & Healing Rights Reserved.
+
+navigateTo('home')}>Confidentiality Policy
+
+navigateTo('contact')}>Global Sanctuary Map
+
+auto
+
+Home Page
+
+About Guruji
+
+All Services
+
+Contact & Book a Session
+
+Get Ex-Love Back
+
+Negative Entity Removal
+
+Love Spell Caster
+
+Black Magic Removal
+
+Husband & Wife Problems
+
+anywhere
+
+wrap
+

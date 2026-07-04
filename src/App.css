@@ -1,0 +1,214 @@
+/* Responsive Layout Rules */
+
+/* Navigation Visibility Toggle */
+@media (min-width: 1101px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1100px) {
+  .desktop-only {
+    display: none !important;
+  }
+  .mobile-only {
+    display: block !important;
+  }
+}
+
+/* Tablet Layout */
+@media (min-width: 769px) and (max-width: 1100px) {
+  #stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+  }
+
+  #timeline-row {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+
+  .site-brand-name {
+    font-size: 17px !important;
+  }
+}
+
+/* Grids and Layout Adjustments */
+@media (max-width: 768px) {
+  #hero-grid,
+  #stats-grid,
+  #about-philosophy-grid,
+  #booking-grid,
+  #detail-layout {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
+  
+  #hero-grid {
+    text-align: center !important;
+  }
+  
+  #hero-grid div {
+    align-items: center !important;
+    text-align: center !important;
+    margin: 0 auto;
+  }
+  
+  .hero-wheel-container {
+    width: min(360px, 100%) !important;
+    height: auto !important;
+    aspect-ratio: 1;
+    margin-bottom: 20px;
+  }
+
+  .hero-wheel-container > div,
+  .hero-wheel-container > img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+  }
+
+  .form-row-2 {
+    grid-template-columns: 1fr !important;
+    gap: 15px !important;
+  }
+
+  #timeline-row {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  #timeline-row .glass-card {
+    height: auto !important;
+    min-height: 150px;
+  }
+
+  .desktop-only-line {
+    display: none !important;
+  }
+
+  .about-temple-banner {
+    height: auto !important;
+  }
+
+  .about-temple-banner > div:first-child {
+    min-height: 240px;
+  }
+
+  #detail-layout .glass-card {
+    padding: 24px 18px !important;
+  }
+
+  #detail-layout ul {
+    grid-template-columns: 1fr !important;
+  }
+
+  .site-brand-name {
+    max-width: calc(100vw - 90px);
+    font-size: clamp(12px, 3.8vw, 16px) !important;
+    letter-spacing: 0.04em !important;
+    white-space: normal;
+  }
+
+  .container {
+    padding-inline: 18px;
+  }
+
+  h1 {
+    font-size: clamp(32px, 10vw, 42px) !important;
+    height: auto !important;
+    overflow-wrap: anywhere;
+  }
+
+  h2 {
+    font-size: clamp(26px, 8vw, 36px) !important;
+    overflow-wrap: anywhere;
+  }
+
+  .glass-card,
+  a,
+  p,
+  span {
+    overflow-wrap: anywhere;
+  }
+
+  .primary-button,
+  .glass-button {
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .about-timeline::before {
+    left: 20px !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    padding-inline: 14px;
+  }
+
+  .section-padding {
+    padding: 48px 0;
+  }
+
+  .floating-actions {
+    right: 14px;
+    bottom: 18px;
+  }
+
+  .fab-btn {
+    width: 46px;
+    height: 46px;
+  }
+}
+
+/* Scrolling marquee animation helper */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.ticker-container {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 30s linear infinite;
+  width: max-content;
+}
+
+/* Form input adjustments */
+select, input, textarea {
+  transition: var(--transition-smooth) !important;
+}
+
+select:focus, input:focus, textarea:focus {
+  border-color: var(--gold) !important;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.25) !important;
+
+}
+
+/* Responsive top bar rules */
+@media (max-width: 1024px) {
+  .top-info-bar__right .top-bar-divider:last-of-type,
+  .top-info-bar__right div:last-of-type { /* Hide location on tablets */
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-info-bar__right .top-bar-divider,
+  .top-info-bar__right a:nth-of-type(2), /* Hide email */
+  .top-info-bar__right div { /* Hide location */
+    display: none !important;
+  }
+  .top-info-bar {
+    padding: 8px 15px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-info-bar {
+    flex-direction: column;
+    gap: 6px;
+    padding: 8px 10px !important;
+  }
+}
