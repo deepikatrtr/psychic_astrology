@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Scraper scripts, Python scripts and helper logs/dumps
+*.py
+*.txt
+*.cjs
