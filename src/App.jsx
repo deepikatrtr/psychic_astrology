@@ -123,7 +123,7 @@ export default function App() {
 
   return (
     <>
-      <CosmicBackground>
+      <CosmicBackground isServiceDetail={currentPage === 'service-detail'}>
         {/* Top Info Bar (above Navbar) */}
         <div style={{
           background: '#040817',
@@ -191,8 +191,8 @@ export default function App() {
             <span>✦ E-DAY RESULTS</span>
             <span>✦ 100% CONFIDENTIALITY</span>
             <span>✦ 35+ YEARS OF MASTERY</span>
-            <span>✦ 10,000+ LIVES TRANSFORMED</span>
-            <span>✦ 10,000+ HAPPY REUNIONS</span>
+            <span>✦ 20,000+ LIVES TRANSFORMED</span>
+            <span>✦ 20,000+ HAPPY REUNIONS</span>
             <span>✦ 100% PRIVACY</span>
             <span>✦ POWERFUL REMEDIES</span>
             <span>✦ EXPERT GUIDANCE</span>
@@ -203,8 +203,8 @@ export default function App() {
             <span>✦ E-DAY RESULTS</span>
             <span>✦ 100% CONFIDENTIALITY</span>
             <span>✦ 35+ YEARS OF MASTERY</span>
-            <span>✦ 10,000+ LIVES TRANSFORMED</span>
-            <span>✦ 10,000+ HAPPY REUNIONS</span>
+            <span>✦ 20,000+ LIVES TRANSFORMED</span>
+            <span>✦ 20,000+ HAPPY REUNIONS</span>
             <span>✦ 100% PRIVACY</span>
             <span>✦ POWERFUL REMEDIES</span>
             <span>✦ EXPERT GUIDANCE</span>

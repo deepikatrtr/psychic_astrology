@@ -1,8 +1,9 @@
 import React, { useMemo } from 'react';
 import zodiacWheelImg from '../assets/chakra.png';
 import nebulaSmokeImg from '../assets/nebula_smoke.png';
+import serviceDetailsBg from '../assets/service_details_bg.png';
 
-export default function CosmicBackground({ children }) {
+export default function CosmicBackground({ children, isServiceDetail }) {
   // Generate random particles configurations once
   const particles = useMemo(() => {
     return Array.from({ length: 25 }).map((_, i) => ({
@@ -17,32 +18,44 @@ export default function CosmicBackground({ children }) {
   }, []);
 
   return (
-    <div style={{ position: 'relative', minHeight: '100vh', width: '100%', zIndex: 0 }}>
-      {/* 1. Fixed Deep Navy Background (#070b1a) */}
-      <div className="space-bg" />
+    <div style={{ 
+      position: 'relative', 
+      minHeight: '100vh', 
+      width: '100%', 
+      zIndex: 0,
+      background: isServiceDetail ? `url(${serviceDetailsBg}) center center / cover no-repeat fixed` : 'none',
+      transition: 'background 0.5s ease-in-out'
+    }}>
+      {/* Original Layers (Only render if not on a service details page) */}
+      {!isServiceDetail && (
+        <>
+          {/* 1. Fixed Deep Navy Background (#070b1a) */}
+          <div className="space-bg" />
 
-      {/* 2. Blurred Blue Radial Glow */}
-      <div className="blue-radial-glow" />
+          {/* 2. Blurred Blue Radial Glow */}
+          <div className="blue-radial-glow" />
 
-      {/* 3. Golden Zodiac Wheel (Slow Rotation, Opacity 0.2-0.3) */}
-      <div className="zodiac-wheel-bg-container">
-        <img 
-          src={zodiacWheelImg} 
-          alt="Zodiac Wheel background" 
-          className="zodiac-wheel-bg"
-        />
-      </div>
+          {/* 3. Golden Zodiac Wheel (Slow Rotation, Opacity 0.2-0.3) */}
+          <div className="zodiac-wheel-bg-container">
+            <img 
+              src={zodiacWheelImg} 
+              alt="Zodiac Wheel background" 
+              className="zodiac-wheel-bg"
+            />
+          </div>
 
-      {/* 4. Smoke/Nebula Layer (Opacity 0.3, Screen Blended) */}
-      <div className="nebula-smoke-bg-container">
-        <img 
-          src={nebulaSmokeImg} 
-          alt="Cosmic Nebula Smoke" 
-          className="nebula-smoke-bg"
-        />
-      </div>
+          {/* 4. Smoke/Nebula Layer (Opacity 0.3, Screen Blended) */}
+          <div className="nebula-smoke-bg-container">
+            <img 
+              src={nebulaSmokeImg} 
+              alt="Cosmic Nebula Smoke" 
+              className="nebula-smoke-bg"
+            />
+          </div>
+        </>
+      )}
 
-      {/* Golden Floating Particles overlay */}
+      {/* Floating Particles overlay (Suitable with the new background animation) */}
       <div className="golden-particles-container">
         {particles.map((p) => (
           <div 

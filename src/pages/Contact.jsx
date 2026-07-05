@@ -174,7 +174,7 @@ I would like to make a confidential inquiry.
                 </div>
                 <div className="contact-trust-stat">
                   <span className="contact-trust-stat__icon"><Users size={25} /></span>
-                  <span><strong>10,000+</strong>Lives transformed</span>
+                  <span><strong>20,000+</strong>Lives transformed</span>
                 </div>
               </div>
 
@@ -187,11 +187,11 @@ I would like to make a confidential inquiry.
                   <Phone size={22} fill="currentColor" />
                   Call Guruji
                 </a>
-                <div className="contact-client-proof" aria-label="More than ten thousand lives transformed">
+                <div className="contact-client-proof" aria-label="More than twenty thousand lives transformed">
                   <span className="contact-client-proof__avatars">
                     <i>SK</i><i>24</i><i>ॐ</i>
                   </span>
-                  <span><strong>10,000+</strong>Lives Transformed</span>
+                  <span><strong>20,000+</strong>Lives Transformed</span>
                 </div>
               </div>
             </div>

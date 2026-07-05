@@ -7,7 +7,7 @@ const EMAIL = 'thebestastrologerlondon@gmail.com';
 
 const serviceSeo = {
   love: {
-    name: 'Reconnect With Your Ex Guidance',
+    name: 'Reuniting With an Ex-Partner Guidance',
     description: 'Confidential psychic astrology and relationship guidance in London for people seeking clarity, healing and a positive path after separation.'
   },
   negativity: {
@@ -15,7 +15,7 @@ const serviceSeo = {
     description: 'Explore private spiritual cleansing and negative energy guidance in London, approached with care, respect and personalised psychic insight.'
   },
   'love-spell-caster': {
-    name: 'Love Spell Services',
+    name: 'Love Ritual & Devotion Work',
     description: 'Receive confidential spiritual and psychic guidance in London for love, emotional connection and relationship concerns.'
   },
   'husband-wife-problems': {
@@ -43,7 +43,7 @@ const serviceSeo = {
     description: 'Restore calm and balance through personalised spiritual healing, energy guidance, meditation and psychic astrology in London.'
   },
   'psychic-reading': {
-    name: 'Online Psychic Reading',
+    name: 'Psychic & Tarot Reading',
     description: 'Book a confidential psychic reading in London for intuitive insight into love, relationships, life direction and personal wellbeing.'
   },
   'love-marriage-solution': {
@@ -51,7 +51,7 @@ const serviceSeo = {
     description: 'Confidential psychic astrology guidance for love marriage, compatibility, family concerns and emotional clarity.'
   },
   'breakup-solution': {
-    name: 'Breakup Recovery Guidance',
+    name: 'Overcoming Breakups & Emotional Healing',
     description: 'Compassionate psychic and spiritual guidance in London for breakup recovery, relationship clarity and emotional healing.'
   }
 };
@@ -81,16 +81,32 @@ const pageSeo = {
 
 const homeFaqs = [
   {
-    question: 'What is psychic astrology?',
-    answer: 'Psychic astrology combines intuitive insight with astrological guidance to help you understand patterns, choices and concerns in your life.'
+    question: 'Are all consultations completely confidential?',
+    answer: 'Yes. Your privacy is our highest priority. Every consultation and all personal information shared with us are kept strictly confidential and handled with complete professionalism.'
   },
   {
-    question: 'Can I book a remote consultation?',
-    answer: 'Yes. Private consultations are available by phone and WhatsApp for clients in London, across the UK and worldwide.'
+    question: 'Do I need my date, time, and place of birth for a reading?',
+    answer: 'Providing your date, time, and place of birth allows for a more detailed birth chart analysis. If you don\'t know your exact birth time, we can still offer guidance using the information available.'
   },
   {
-    question: 'Are consultations confidential?',
-    answer: 'Yes. Personal concerns and consultation details are handled privately and respectfully.'
+    question: 'How can I book an appointment?',
+    answer: 'Booking is simple. Contact us by phone, WhatsApp, email, or through our website\'s appointment form. We\'ll help you choose a convenient consultation time and guide you through the next steps.'
+  },
+  {
+    question: 'Can I consult you online or over the phone?',
+    answer: 'Absolutely. We provide online, phone, and video consultations, allowing clients from anywhere in the world to receive professional astrology guidance without visiting in person.'
+  },
+  {
+    question: 'How does an astrology consultation work?',
+    answer: 'Our consultation begins with understanding your concerns and, where relevant, analyzing your birth details. Based on your unique situation, we provide personalized guidance, practical insights, and suitable spiritual remedies to help you make informed decisions about your future.'
+  },
+  {
+    question: 'Do you offer career, business, and financial guidance?',
+    answer: 'Yes. We offer guidance on career growth, business opportunities, job changes, financial planning, and professional success through detailed astrological analysis to help you make confident decisions.'
+  },
+  {
+    question: 'How long does it take to see results from spiritual remedies?',
+    answer: 'The timeframe varies depending on each individual\'s circumstances and the nature of their concerns. Some people notice positive changes sooner, while others may require more time. Consistency and following the recommended guidance are important.'
   }
 ];
 

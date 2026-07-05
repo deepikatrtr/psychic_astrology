@@ -9,23 +9,23 @@ export default function Book({ embedded = false }) {
     email: '',
     date: '',
     time: '',
-    service: 'Reconnect With Your Ex',
+    service: 'Reuniting With an Ex-Partner',
     problem: ''
   });
 
   const services = [
-    "Reconnect With Your Ex",
+    "Reuniting With an Ex-Partner",
     "Negative Energy Clearing",
-    "Love Spell Services",
+    "Love Ritual & Devotion Work",
     "Husband & Wife Relationship Counseling",
     "Marriage Relationship Guidance",
     "Spiritual Cleansing",
     "Spiritual Protection",
     "Evil Eye Protection",
     "Spiritual Healing",
-    "Online Psychic Reading",
+    "Psychic & Tarot Reading",
     "Love Marriage Guidance",
-    "Breakup Recovery Guidance"
+    "Overcoming Breakups & Emotional Healing"
   ];
 
   const handleSubmit = (e) => {

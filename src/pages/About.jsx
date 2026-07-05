@@ -9,14 +9,13 @@ import sacredTemple from '../assets/sacred_temple.png';
 import chakraImg from '../assets/meditating_chakras.webp';
 
 export default function About({ navigateTo }) {
-  // Timeline Journey (Horizontal timeline)
   const timeline = [
-    { y: "1990", t: "Born In Sacred Lineage", d: "Born into a family of spiritual scholars and initiated into spiritual sadhana at age 7." },
-    { y: "1995", t: "Mastery Of Scriptures", d: "Studied Bhrigu Samhita, Lal Kitab and Nadi Astrology under master gurus." },
-    { y: "2003", t: "First Global Consultation", d: "Started guiding families across the UK and overseas through psychic and spiritual guidance." },
-    { y: "2010", t: "Psychic Healing Centre", d: "Established a dedicated healing practice in London, helping thousands." },
-    { y: "2018", t: "International Recognition", d: "Honoured by All India Federation Of Astrologers for outstanding spiritual contributions." },
-    { y: "Today", t: "Serving Worldwide", d: "Trusted by 10,000+ people all over the world for proven psychic and spiritual guidance." }
+    { y: "01", t: "Traditional Knowledge", d: "Built on years of studying Vedic Astrology, Lal Kitab, and Nadi Astrology." },
+    { y: "02", t: "Personalized Consultations", d: "Every horoscope is carefully analyzed to provide guidance tailored to your unique life journey." },
+    { y: "03", t: "Global Accessibility", d: "Available for online, phone, and in-person consultations for clients worldwide." },
+    { y: "04", t: "Trusted Guidance", d: "Providing astrology consultations for love, marriage, career, business, family, and personal growth." },
+    { y: "05", t: "Continuous Learning", d: "Committed to preserving traditional astrological wisdom while offering practical guidance for modern life." },
+    { y: "Today", t: "Clarity & Direction", d: "Helping people gain clarity, confidence, and direction through personalized astrology consultations." }
   ];
 
   // Expertise List
@@ -149,7 +148,7 @@ export default function About({ navigateTo }) {
               lineHeight: '1.2',
               marginBottom: '15px' 
             }}>
-              About <br />
+              About Us <br />
               Best Astrologer in London
             </h1>
 
@@ -167,7 +166,7 @@ export default function About({ navigateTo }) {
               lineHeight: '1.7',
               maxWidth: '520px'
             }}>
-              A lifelong practitioner of psychic astrology, helping people overcome life's challenges through authentic insight, spiritual healing and powerful remedies.
+              Looking for trusted astrology guidance in London? We provide personalized astrology consultations for love, marriage, career, business, family, finance, and life challenges. Through detailed birth chart analysis and practical astrological insights, we help you gain clarity, confidence, and direction for a more positive future.
             </p>
 
             <button 
@@ -202,8 +201,8 @@ export default function About({ navigateTo }) {
           }} id="stats-grid">
             {[
               { icon: <Users size={24} />, n: "35+", label: "Years of Mastery" },
-              { icon: <Heart size={24} />, n: "10,000+", label: "Lives Transformed" },
-              { icon: <Globe size={24} />, n: "40+", label: "Countries Served" },
+              { icon: <Heart size={24} />, n: "20,000+", label: "Lives Transformed" },
+              { icon: <Globe size={24} />, n: "65+", label: "Countries Served" },
               { icon: <Award size={24} />, n: "98%", label: "Success Rate" }
             ].map((stat, i) => (
               <div 
@@ -263,10 +262,13 @@ export default function About({ navigateTo }) {
               <span style={{ fontSize: '11px', fontFamily: 'var(--font-display)', color: 'var(--gold)', letterSpacing: '0.2em' }}>ABOUT GURUJI</span>
             </div>
             <h2 className="font-display text-gold-gradient" style={{ fontSize: '34px', fontWeight: 'bold', marginBottom: '20px' }}>
-              Guiding Souls. <br />Transforming Lives.
+              Trusted Astrology Guidance for Life's Important Decisions
             </h2>
-            <p style={{ fontSize: '15px', color: 'var(--text-primary)', marginBottom: '20px', lineHeight: '1.7' }}>
-              Best Astrologer in London comes from a sacred lineage of spiritual scholars and has dedicated his life to helping people find solutions to their problems. With deep knowledge of psychic astrology, Lal Kitab, Nadi Astrology and spiritual healing, Guruji has guided thousands of individuals and families towards peace, love, success and spiritual awakening.
+            <p style={{ fontSize: '15px', color: 'var(--text-primary)', marginBottom: '15px', lineHeight: '1.7' }}>
+              Best Astrologer in London is dedicated to providing personalized astrology consultations to help individuals gain clarity, confidence, and direction. Drawing on traditional astrological knowledge, including Vedic Astrology, Lal Kitab, and Nadi Astrology, Guruji offers guidance for love, relationships, marriage, career, business, finance, and family matters.
+            </p>
+            <p style={{ fontSize: '14px', color: 'var(--text-muted)', marginBottom: '20px', lineHeight: '1.7' }}>
+              Every consultation is tailored to your unique birth chart, providing meaningful insights and practical guidance to help you make informed decisions and navigate life's challenges with confidence.
             </p>
           </div>
 
@@ -396,11 +398,11 @@ export default function About({ navigateTo }) {
         </div>
       </section>
 
-      {/* 5. THE DIVINE JOURNEY (TIMELINE) */}
+      {/* 5. JOURNEY OF EXCELLENCE (TIMELINE) */}
       <section className="section-padding">
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '50px' }}>
-            <span style={{ fontSize: '11px', fontFamily: 'var(--font-display)', color: 'var(--gold)', letterSpacing: '0.2em' }}>THE DIVINE JOURNEY</span>
+            <span style={{ fontSize: '11px', fontFamily: 'var(--font-display)', color: 'var(--gold)', letterSpacing: '0.2em' }}>JOURNEY OF EXCELLENCE</span>
             <div className="ornament-line" style={{ margin: '8px auto 20px auto' }}>
               <span className="ornament-star">✦</span>
             </div>

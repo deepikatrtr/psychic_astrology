@@ -151,8 +151,7 @@ export default function Navbar({ currentPage, navigateTo }) {
             background: 'none',
             border: 'none',
             color: 'var(--gold)',
-            cursor: 'pointer',
-            display: 'none' /* Handled by media query in App.css */
+            cursor: 'pointer'
           }}
         >
           {isOpen ? <X size={26} /> : <Menu size={26} />}

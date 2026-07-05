@@ -38,7 +38,8 @@
   #stats-grid,
   #about-philosophy-grid,
   #booking-grid,
-  #detail-layout {
+  #detail-layout,
+  #how-it-works-grid {
     grid-template-columns: 1fr !important;
     gap: 30px !important;
   }
@@ -54,16 +55,34 @@
   }
   
   .hero-wheel-container {
-    width: min(360px, 100%) !important;
-    height: auto !important;
-    aspect-ratio: 1;
-    margin-bottom: 20px;
+    width: min(320px, 90vw) !important;
+    height: min(320px, 90vw) !important;
+    aspect-ratio: 1 / 1 !important;
+    margin: 0 auto 20px auto !important;
   }
 
-  .hero-wheel-container > div,
-  .hero-wheel-container > img {
-    max-width: 100% !important;
-    max-height: 100% !important;
+  .hero-badge-mobile {
+    top: 10px !important;
+    left: 10px !important;
+    padding: 4px 10px !important;
+    font-size: 10px !important;
+  }
+
+  .hero-overlay-card {
+    padding: 8px 12px !important;
+    bottom: 10px !important;
+    left: 10px !important;
+    right: 10px !important;
+    border-radius: 8px !important;
+  }
+
+  .hero-overlay-card h4 {
+    font-size: 12px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .hero-overlay-card p {
+    font-size: 9px !important;
   }
 
   .form-row-2 {
@@ -207,7 +226,8 @@ select:focus, input:focus, textarea:focus {
 
 @media (max-width: 480px) {
   .top-info-bar {
-    flex-direction: column;
+    flex-direction: row !important;
+    justify-content: space-between !important;
     gap: 6px;
     padding: 8px 10px !important;
   }

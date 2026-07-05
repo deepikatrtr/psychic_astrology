@@ -55,7 +55,7 @@ export default function Services({ navigateTo }) {
     { 
       slug: "love", 
       num: "01",
-      title: "Reconnect With Your Ex", 
+      title: "Reuniting With an Ex-Partner", 
       short: "Reunite with lost love through powerful mantras and rituals.", 
       category: "love", 
       icon: <Heart size={16} fill="white" />,
@@ -73,7 +73,7 @@ export default function Services({ navigateTo }) {
     { 
       slug: "love-spell-caster", 
       num: "03",
-      title: "Love Spell Services", 
+      title: "Love Ritual & Devotion Work", 
       short: "Authentic divine love spells to attract and deepen love.", 
       category: "healing", 
       icon: <Sparkles size={16} fill="white" />,
@@ -136,7 +136,7 @@ export default function Services({ navigateTo }) {
     { 
       slug: "psychic-reading", 
       num: "10",
-      title: "Online Psychic Reading", 
+      title: "Psychic & Tarot Reading", 
       short: "Gain clarity about your past, present and future.", 
       category: "healing", 
       icon: <HelpCircle size={16} />,
@@ -154,7 +154,7 @@ export default function Services({ navigateTo }) {
     { 
       slug: "breakup-solution", 
       num: "12",
-      title: "Breakup Recovery Guidance", 
+      title: "Overcoming Breakups & Emotional Healing", 
       short: "Mend broken hearts and reopen the path to love.", 
       category: "love", 
       icon: <Heart size={16} fill="white" />,
@@ -254,8 +254,8 @@ export default function Services({ navigateTo }) {
           }} id="stats-grid">
             {[
               { icon: <Users size={24} />, n: "35+", label: "Years of Mastery" },
-              { icon: <Heart size={24} />, n: "10,000+", label: "Lives Transformed" },
-              { icon: <Globe size={24} />, n: "40+", label: "Countries Served" },
+              { icon: <Heart size={24} />, n: "20,000+", label: "Lives Transformed" },
+              { icon: <Globe size={24} />, n: "65+", label: "Countries Served" },
               { icon: <Award size={24} />, n: "98%", label: "Success Rate" }
             ].map((stat, i) => (
               <div 

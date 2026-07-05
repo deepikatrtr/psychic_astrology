@@ -281,13 +281,7 @@ body {
 
 .section-padding {
   padding: 80px 0;
-background: linear-gradient(
-135deg,
-#000000 0%,
-#05070f 20%,
-#070b1a 50%,
-#132a55 100%
-);
+  background-color: rgba(20, 1, 8, 0.4);
 }
 
 @media (max-width: 768px) {
@@ -936,4 +930,76 @@ input:focus, select:focus, textarea:focus {
     opacity: 0;
   }
 }
+
+/* Custom Reuniting With an Ex-Partner design overrides */
+@media (max-width: 768px) {
+  .timeline-row-responsive {
+    grid-template-columns: 1fr !important;
+    gap: 15px !important;
+  }
+  .desktop-only-arrow {
+    display: none !important;
+  }
+  .desktop-only-line {
+    display: none !important;
+  }
+  #timeline-headers {
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+    text-align: center !important;
+  }
+  #timeline-headers > div {
+    display: none !important;
+  }
+  #not-alone-banner {
+    flex-direction: column !important;
+    text-align: center !important;
+    align-items: center !important;
+  }
+  #not-alone-content {
+    flex-direction: column !important;
+    text-align: center !important;
+    align-items: center !important;
+  }
+  #cta-buttons {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 10px !important;
+  }
+  #hero-buttons {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 10px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #stats-grid {
+    flex-wrap: wrap !important;
+    border-radius: 20px !important;
+    padding: 20px !important;
+    gap: 15px 10px !important;
+  }
+  .stat-item-responsive {
+    border-right: none !important;
+    padding-right: 0 !important;
+    min-width: 45% !important;
+    justify-content: flex-start !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .moon-sequence-mobile {
+    gap: 8px !important;
+  }
+  .moon-sequence-mobile > div {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .quote-card-heading-mobile {
+    font-size: 20px !important;
+    line-height: 1.4 !important;
+  }
+}
+
 
