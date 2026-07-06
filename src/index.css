@@ -186,7 +186,7 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate3d(-50%, -50%, 0);
   width: 900px;
   height: 900px;
   max-width: 95vw;
@@ -197,6 +197,7 @@ body {
   align-items: center;
   justify-content: center;
   opacity: 0.24; /* between 0.2 and 0.3 */
+  will-change: transform;
 }
 
 .zodiac-wheel-bg {
@@ -205,6 +206,7 @@ body {
   object-fit: contain;
   animation: spin-slow 120s linear infinite;
   mix-blend-mode: screen;
+  will-change: transform;
 }
 
 /* Smoke/Nebula Layer Container & Image */
@@ -216,6 +218,8 @@ body {
   z-index: -12;
   pointer-events: none;
   opacity: 0.3; /* opacity: 0.3 */
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
 }
 
 .nebula-smoke-bg {
@@ -224,6 +228,7 @@ body {
   object-fit: cover;
   mix-blend-mode: screen; /* Blends black background away */
   filter: saturate(1.1);
+  will-change: transform;
 }
 
 /* Slow continuous rotation animation */
@@ -1002,4 +1007,15 @@ input:focus, select:focus, textarea:focus {
   }
 }
 
-
+/* Global mobile optimization to prevent GPU compositor and texture rendering glitches */
+@media (max-width: 768px) {
+  * {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+  .glass-card,
+  .glass-button,
+  [class*="glass"] {
+    background-color: rgba(7, 11, 26, 0.92) !important;
+  }
+}

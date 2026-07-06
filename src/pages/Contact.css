@@ -31,13 +31,14 @@
   left: 66.5%;
   width: clamp(430px, 42vw, 720px);
   aspect-ratio: 1;
-  transform: translate(-50%, -50%);
+  transform: translate3d(-50%, -50%, 0);
   pointer-events: none;
   opacity: 0.46;
   mix-blend-mode: screen;
   filter:
     drop-shadow(0 0 12px rgba(255, 202, 89, 0.6))
     drop-shadow(0 0 34px rgba(165, 73, 255, 0.34));
+  will-change: transform;
 }
 
 .contact-showcase__wheel-layer::before {

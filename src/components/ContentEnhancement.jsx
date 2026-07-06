@@ -16,7 +16,7 @@ const pageContent = {
   about: {
     eyebrow: 'A PERSONAL APPROACH',
     title: 'Psychic Insight Guided by Care and Experience',
-    lead: 'Guruji's work centres on listening carefully, understanding the full concern and offering guidance that respects each person's beliefs and circumstances.',
+    lead: "Guruji's work centres on listening carefully, understanding the full concern and offering guidance that respects each person's beliefs and circumstances.",
     body: 'Psychic astrology is used as a reflective tool alongside spiritual practices, helping clients approach love, family, personal wellbeing and life decisions with greater awareness.',
     cards: [
       ['Listen First', 'Every consultation begins with your story, priorities and the outcome you hope to understand.'],

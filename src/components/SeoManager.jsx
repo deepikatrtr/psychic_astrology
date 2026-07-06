@@ -64,7 +64,7 @@ const pageSeo = {
   },
   about: {
     title: 'About Guruji | Psychic Astrologer & Spiritual Healer',
-    description: 'Learn about Guruji's approach to psychic astrology, spiritual healing and confidential guidance for clients in London and worldwide.',
+    description: "Learn about Guruji's approach to psychic astrology, spiritual healing and confidential guidance for clients in London and worldwide.",
     keywords: 'psychic astrologer London, spiritual healer London, about Guruji, astrology guidance'
   },
   services: {
