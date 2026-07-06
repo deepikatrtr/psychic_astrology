@@ -51,7 +51,7 @@ export default function Footer({ navigateTo }) {
           marginBottom: '50px',
           alignItems: 'start'
         }}>
-          
+
           {/* Column 1: Brand Col */}
           <div style={{ paddingRight: '20px' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '20px' }}>
@@ -63,7 +63,7 @@ export default function Footer({ navigateTo }) {
               </div>
               <div>
                 <span className="font-display text-gold-gradient" style={{ fontSize: '18px', fontWeight: '600', letterSpacing: '0.05em', display: 'block' }}>
-                  BEST ASTROLOGER<br/>IN LONDON
+                  BEST ASTROLOGER<br />IN LONDON
                 </span>
                 <span style={{ fontSize: '9px', color: '#fff', letterSpacing: '0.15em', display: 'block', marginTop: '4px' }}>
                   PSYCHIC ASTROLOGY & HEALING
@@ -89,10 +89,10 @@ export default function Footer({ navigateTo }) {
                   <a href={`#${link.toLowerCase().replace(/\s+/g, '-')}`}
                     onClick={(e) => {
                       e.preventDefault();
-                      if(link === 'Home') navigateTo('home');
-                      else if(link === 'About Us') navigateTo('about');
-                      else if(link === 'Services' || link === 'Specialist In') navigateTo('home');
-                      else if(link === 'Contact Us') navigateTo('contact');
+                      if (link === 'Home') navigateTo('home');
+                      else if (link === 'About Us') navigateTo('about');
+                      else if (link === 'Services' || link === 'Specialist In') navigateTo('home');
+                      else if (link === 'Contact Us') navigateTo('contact');
                       else navigateTo('home');
                     }}
                     style={{
@@ -169,35 +169,35 @@ export default function Footer({ navigateTo }) {
               Subscribe to get astrology tips, predictions and exclusive offers.
             </p>
             <div style={{ display: 'flex', height: '42px' }}>
-              <input 
-                type="email" 
-                placeholder="Enter your email" 
-                style={{ 
-                  flex: 1, 
-                  padding: '0 15px', 
-                  background: 'rgba(255,255,255,0.03)', 
-                  border: '1px solid rgba(255,255,255,0.1)', 
+              <input
+                type="email"
+                placeholder="Enter your email"
+                style={{
+                  flex: 1,
+                  padding: '0 15px',
+                  background: 'rgba(255,255,255,0.03)',
+                  border: '1px solid rgba(255,255,255,0.1)',
                   borderRight: 'none',
-                  borderRadius: '21px 0 0 21px', 
-                  color: '#fff', 
+                  borderRadius: '21px 0 0 21px',
+                  color: '#fff',
                   outline: 'none',
                   fontSize: '13px',
                   width: '100%'
-                }} 
+                }}
               />
-              <button style={{ 
-                padding: '0 20px', 
-                background: 'var(--gold)', 
-                border: 'none', 
-                borderRadius: '0 21px 21px 0', 
+              <button style={{
+                padding: '0 20px',
+                background: 'var(--gold)',
+                border: 'none',
+                borderRadius: '0 21px 21px 0',
                 cursor: 'pointer',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
                 transition: 'background 0.3s'
               }}
-              onMouseEnter={e => e.currentTarget.style.background = '#e6be3e'}
-              onMouseLeave={e => e.currentTarget.style.background = 'var(--gold)'}
+                onMouseEnter={e => e.currentTarget.style.background = '#e6be3e'}
+                onMouseLeave={e => e.currentTarget.style.background = 'var(--gold)'}
               >
                 <Mail size={16} color="#040817" />
               </button>
@@ -226,21 +226,21 @@ export default function Footer({ navigateTo }) {
               </div>
               <div style={{ fontSize: '11px', color: '#8a8f9e', paddingLeft: '51px' }}>Available Daily: 8:00 AM – 10:00 PM</div>
             </div>
-            
+
             {/* The Zodiac wheel image from the user's provided picture. 
                 I'll simulate the look using an absolute positioned element, or just leave it clean. 
                 The user has it on the right edge. */}
             <div style={{
-               position: 'absolute',
-               bottom: '-50px',
-               right: '-50px',
-               width: '300px',
-               height: '300px',
-               backgroundImage: 'url(/zodiac_couple.png)', /* fallback if any */
-               backgroundSize: 'contain',
-               backgroundRepeat: 'no-repeat',
-               opacity: 0.1,
-               pointerEvents: 'none'
+              position: 'absolute',
+              bottom: '-50px',
+              right: '-50px',
+              width: '300px',
+              height: '300px',
+              //  backgroundImage: 'url(/zodiac_couple.png)', /* fallback if any */
+              backgroundSize: 'contain',
+              backgroundRepeat: 'no-repeat',
+              opacity: 0.1,
+              pointerEvents: 'none'
             }} />
           </div>
 
