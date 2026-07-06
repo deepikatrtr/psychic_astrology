@@ -78,7 +78,7 @@ export default function App() {
           document.getElementById('book-session')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
       } else {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        window.scrollTo(0, 0);
       }
     };
 
@@ -90,12 +90,22 @@ export default function App() {
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
+  // Scroll to top on page/slug state transitions (ensures DOM is updated)
+  useEffect(() => {
+    if (window.location.hash !== '#book') {
+      window.scrollTo(0, 0);
+    }
+  }, [currentPage, selectedServiceSlug]);
+
   // Safe Navigation Helper
   const navigateTo = (pageId, serviceSlug = null) => {
     if (pageId === 'service-detail' && serviceSlug) {
       window.location.hash = `services/${serviceSlug}`;
     } else {
       window.location.hash = pageId;
+    }
+    if (pageId !== 'book') {
+      window.scrollTo(0, 0);
     }
   };
 

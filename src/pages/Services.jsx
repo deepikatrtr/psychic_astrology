@@ -17,6 +17,13 @@ import imgSpiritualHealing from '../assets/spiritual_healing.webp';
 import imgPsychicReading from '../assets/psychic_reading.webp';
 import imgLoveMarriage from '../assets/love_marriage_solution.webp';
 import imgBreakup from '../assets/breakup_solution.webp';
+import imgWorkProblem from '../assets/work_problem.webp';
+import imgMoneyProblem from '../assets/image.png_202607061300.webp';
+import imgChildlessCouples from '../assets/childless-couples.webp';
+import imgMoneyBlessing from '../assets/money-blessing.webp';
+import imgDrinkingProblem from '../assets/drinking-problem.webp';
+import imgDepression from '../assets/Depression.webp';
+import imgHouseProtection from '../assets/house-protection.webp';
 
 // Guruji Portrait & Graphics
 import astrologerImg from '../assets/astrologer.webp';
@@ -34,7 +41,14 @@ const serviceImages = {
   "spiritual-healing": imgSpiritualHealing,
   "psychic-reading": imgPsychicReading,
   "love-marriage-solution": imgLoveMarriage,
-  "breakup-solution": imgBreakup
+  "breakup-solution": imgBreakup,
+  "work-problems": imgWorkProblem,
+  "money-problems": imgMoneyProblem,
+  "childless-couples": imgChildlessCouples,
+  "money-blessing": imgMoneyBlessing,
+  "drinking-problem": imgDrinkingProblem,
+  "depression": imgDepression,
+  "house-protection": imgHouseProtection
 };
 
 export default function Services({ navigateTo }) {
@@ -50,7 +64,7 @@ export default function Services({ navigateTo }) {
     return () => clearInterval(interval);
   }, [imagesArray.length]);
 
-  // 12 Services Data
+  // 19 Services Data
   const services = [
     { 
       slug: "love", 
@@ -159,6 +173,69 @@ export default function Services({ navigateTo }) {
       category: "love", 
       icon: <Heart size={16} fill="white" />,
       color: "#e11d48"
+    },
+    { 
+      slug: "work-problems", 
+      num: "13",
+      title: "Career & Work Problems", 
+      short: "Resolve career stagnation, job insecurity, and workplace disputes through planetary alignment.", 
+      category: "healing", 
+      icon: <Award size={16} />,
+      color: "#8b5cf6"
+    },
+    { 
+      slug: "money-problems", 
+      num: "14",
+      title: "Financial & Debt Relief Solutions", 
+      short: "Overcome debt, financial obstacles, and monetary loss with Vedic astrology remedies.", 
+      category: "healing", 
+      icon: <Zap size={16} fill="white" />,
+      color: "#2563eb"
+    },
+    { 
+      slug: "childless-couples", 
+      num: "15",
+      title: "Remedies for Childless Couples", 
+      short: "Vedic astrology guidance and Santana Gopala rituals to overcome conception delays.", 
+      category: "love", 
+      icon: <Users size={16} />,
+      color: "#db2777"
+    },
+    { 
+      slug: "money-blessing", 
+      num: "16",
+      title: "Money Blessing & Abundance Puja", 
+      short: "Invoke Goddess Lakshmi and Lord Kuber to attract wealth, luck, and business growth.", 
+      category: "healing", 
+      icon: <Sparkles size={16} fill="white" />,
+      color: "#8b5cf6"
+    },
+    { 
+      slug: "drinking-problem", 
+      num: "17",
+      title: "Astrological Remedies for Addiction & Drinking", 
+      short: "Strengthen the weak Moon and pacify afflicted Rahu to break free from bad habits.", 
+      category: "healing", 
+      icon: <Shield size={16} fill="white" />,
+      color: "#2563eb"
+    },
+    { 
+      slug: "depression", 
+      num: "18",
+      title: "Spiritual Aura Healing for Depression & Anxiety", 
+      short: "Soothe a troubled mind, release heavy grief, and realign your inner chakras.", 
+      category: "healing", 
+      icon: <Heart size={16} fill="white" />,
+      color: "#e11d48"
+    },
+    { 
+      slug: "house-protection", 
+      num: "19",
+      title: "House Protection & Vastu Shastra Cleansing", 
+      short: "Shield your home from evil eye, negative energies, and domestic disputes.", 
+      category: "protection", 
+      icon: <Shield size={16} fill="white" />,
+      color: "#2563eb"
     }
   ];
 

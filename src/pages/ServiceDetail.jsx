@@ -19,6 +19,13 @@ import imgPsychicReading from '../assets/psychic_reading.webp';
 import imgLoveMarriage from '../assets/love_marriage_solution.webp';
 import imgBreakup from '../assets/breakup_solution.webp';
 import imgChakra from '../assets/chakra.png';
+import imgWorkProblem from '../assets/work_problem.webp';
+import imgMoneyProblem from '../assets/image.png_202607061300.webp';
+import imgChildlessCouples from '../assets/childless-couples.webp';
+import imgMoneyBlessing from '../assets/money-blessing.webp';
+import imgDrinkingProblem from '../assets/drinking-problem.webp';
+import imgDepression from '../assets/Depression.webp';
+import imgHouseProtection from '../assets/house-protection.webp';
 
 const serviceImages = {
   "love": imgLove,
@@ -32,11 +39,18 @@ const serviceImages = {
   "spiritual-healing": imgSpiritualHealing,
   "psychic-reading": imgPsychicReading,
   "love-marriage-solution": imgLoveMarriage,
-  "breakup-solution": imgBreakup
+  "breakup-solution": imgBreakup,
+  "work-problems": imgWorkProblem,
+  "money-problems": imgMoneyProblem,
+  "childless-couples": imgChildlessCouples,
+  "money-blessing": imgMoneyBlessing,
+  "drinking-problem": imgDrinkingProblem,
+  "depression": imgDepression,
+  "house-protection": imgHouseProtection
 };
 
 export default function ServiceDetail({ slug, navigateTo }) {
-  // 12 Services basic info
+  // 19 Services basic info
   const services = [
     { 
       slug: "love", 
@@ -109,6 +123,48 @@ export default function ServiceDetail({ slug, navigateTo }) {
       title: "Overcoming Breakups & Emotional Healing", 
       icon: <Heart size={24} />,
       description: "Heal the wounds of breakup and reopen the path to reconciliation with proven psychic guidance." 
+    },
+    { 
+      slug: "work-problems", 
+      title: "Career & Work Problems", 
+      icon: <Award size={24} />,
+      description: "Vedic astrological solutions to clear professional blockages, boost authority, and secure promotions. By analyzing the 10th and 6th houses of your Kundli, Guruji offers specific mantras, Sun-offerings, and Thursday remedies to eliminate career stagnation, resolve boss-subordinate conflicts, and attract new professional opportunities." 
+    },
+    { 
+      slug: "money-problems", 
+      title: "Financial & Debt Relief Solutions", 
+      icon: <Zap size={24} />,
+      description: "Address financial distress, mounting debts, and business stagnation. Guruji examines planetary positions, specifically the 6th, 2nd, and 11th houses in your birth chart, to identify underlying Karmic debts (Rin Yog). Practical remedies including specific Hanuman worship, bird feedings, and charity guidelines help restore positive cash flow and stability." 
+    },
+    { 
+      slug: "childless-couples", 
+      title: "Remedies for Childless Couples", 
+      icon: <Users size={24} />,
+      description: "Providing spiritual hope and astrological remedies for couples facing delays in conceiving progeny. By carefully analyzing the 5th house and the influence of Jupiter (Putrakaraka) in both partners' horoscopes, Guruji identifies astrological doshas. Sacred Santana Gopala Pujas, pacification mantras, and charitable remedies are provided to bless your home with the joy of children." 
+    },
+    { 
+      slug: "money-blessing", 
+      title: "Money Blessing & Abundance Puja", 
+      icon: <Sparkles size={24} />,
+      description: "Open the channels of prosperity and attract abundance into your life. Through sacred Lakshmi-Kuber Pujas, energy clearing, and specific spiritual practices, Guruji helps you clear subconscious scarcity mindsets and karmic financial blockages. Experience a positive shift in wealth accumulation, business deals, and household luck." 
+    },
+    { 
+      slug: "drinking-problem", 
+      title: "Astrological Remedies for Addiction & Drinking", 
+      icon: <Shield size={24} />,
+      description: "In Vedic astrology, drinking and substance struggles are often linked to a weak Moon (which controls emotions) and an afflicted Rahu or Neptune. Guruji provides compassionate, confidential spiritual guidance, offering planetary remedies and protective chants to calm emotional restlessness, strengthen your inner resolve, and shield you from negative attachments." 
+    },
+    { 
+      slug: "depression", 
+      title: "Spiritual Aura Healing for Depression & Anxiety", 
+      icon: <Heart size={24} />,
+      description: "Restore your inner light, peace, and mental well-being. Using Vedic sound healing, chakra balancing, and personalized energy cleansing, Guruji addresses heavy planetary pressures (such as Saturn or Rahu transits affecting the Moon). These gentle, supportive rituals clear stagnant emotional energy, reduce chronic overthinking, and help you find peace of mind." 
+    },
+    { 
+      slug: "house-protection", 
+      title: "House Protection & Vastu Shastra Cleansing", 
+      icon: <Shield size={24} />,
+      description: "Safeguard your living space and family. Guruji offers Vastu Shastra space clearing rituals, including sea salt mopping remedies, camphor purification dhoops, and the installation of protective Yantras. Safeguard your entrance from the evil eye (Nazar) and block toxic external vibes to cultivate a peaceful, prosperous, and happy domestic life." 
     }
   ];
 
@@ -618,6 +674,300 @@ export default function ServiceDetail({ slug, navigateTo }) {
         solutionIcon: <Heart size={20} />,
         solutionTitle: "Heart Opening",
         solutionDesc: "Gentle spiritual guidance to open your heart safely."
+      }
+    ],
+    "work-problems": [
+      {
+        challengeIcon: <Clock size={20} />,
+        challengeTitle: "Job Stagnation & Delays",
+        challengeDesc: "Being stuck in the same position for years with no promotions.",
+        solutionIcon: <Sparkles size={20} />,
+        solutionTitle: "Speed Up Growth",
+        solutionDesc: "Saturn (Shani) remedies and bird feeding to ease delays and open progress pathways."
+      },
+      {
+        challengeIcon: <Users size={20} />,
+        challengeTitle: "Workplace Conflicts",
+        challengeDesc: "Arguments with colleagues or a hostile relationship with your manager.",
+        solutionIcon: <Compass size={20} />,
+        solutionTitle: "Professional Harmony",
+        solutionDesc: "Sun worship and copper Arghya remedies to gain workplace respect and recognition."
+      },
+      {
+        challengeIcon: <HelpCircle size={20} />,
+        challengeTitle: "Lack of Direction",
+        challengeDesc: "Feeling confused about which career path or industry to choose.",
+        solutionIcon: <Star size={20} />,
+        solutionTitle: "Career Alignment",
+        solutionDesc: "Detailed 10th house analysis and Jupiter chants to align your natural talents with success."
+      },
+      {
+        challengeIcon: <Shield size={20} />,
+        challengeTitle: "Job Insecurity & Fear",
+        challengeDesc: "Constantly worrying about layoffs or losing your source of income.",
+        solutionIcon: <Shield size={20} />,
+        solutionTitle: "Employment Shielding",
+        solutionDesc: "Aura strengthening and protective mantras to secure your position."
+      },
+      {
+        challengeIcon: <Zap size={20} />,
+        challengeTitle: "Interview Hurdles",
+        challengeDesc: "Failing repeatedly at the final stages of job applications.",
+        solutionIcon: <CheckCircle2 size={20} />,
+        solutionTitle: "Success Attraction",
+        solutionDesc: "Specific Ganesha mantras and energetic alignments before interviews to clear obstacles."
+      }
+    ],
+    "money-problems": [
+      {
+        challengeIcon: <Clock size={20} />,
+        challengeTitle: "Mounting Debt & Loans",
+        challengeDesc: "Struggling under the weight of loans and unable to find repayment paths.",
+        solutionIcon: <Sparkles size={20} />,
+        solutionTitle: "Debt Cleansing",
+        solutionDesc: "Hanuman Chalisa chanting and Mars remedies on Tuesdays to clear financial obstacles."
+      },
+      {
+        challengeIcon: <Users size={20} />,
+        challengeTitle: "Business Losses",
+        challengeDesc: "Steady decline in business revenue and customer traffic.",
+        solutionIcon: <Globe size={20} />,
+        solutionTitle: "Business Restoration",
+        solutionDesc: "Lakshmi-Kuber pujas and energy cleansing at the main entrance of your workspace."
+      },
+      {
+        challengeIcon: <HelpCircle size={20} />,
+        challengeTitle: "Unexplained Expenses",
+        challengeDesc: "Money draining away on unexpected crises as soon as it is earned.",
+        solutionIcon: <Compass size={20} />,
+        solutionTitle: "Wealth Retention",
+        solutionDesc: "Saturn charity donations and aura scanning to identify sudden financial drains."
+      },
+      {
+        challengeIcon: <Shield size={20} />,
+        challengeTitle: "Inherited Financial Curse",
+        challengeDesc: "Repeating ancestral patterns of bankruptcy or financial struggle.",
+        solutionIcon: <Shield size={20} />,
+        solutionTitle: "Karmic Rin Yog Release",
+        solutionDesc: "Targeted Pitri Dosha rituals and yellow-item donations to soothe planetary houses."
+      },
+      {
+        challengeIcon: <Zap size={20} />,
+        challengeTitle: "Scarcity Mindset",
+        challengeDesc: "Constant fear of poverty blocking your capacity to attract opportunities.",
+        solutionIcon: <CheckCircle2 size={20} />,
+        solutionTitle: "Abundance Alignment",
+        solutionDesc: "Energy clearing meditation to shift your vibrational frequency from lack to wealth."
+      }
+    ],
+    "childless-couples": [
+      {
+        challengeIcon: <Heart size={20} />,
+        challengeTitle: "Conception Delays",
+        challengeDesc: "Facing long-term difficulty in conceiving a child with no clinical explanation.",
+        solutionIcon: <Sparkles size={20} />,
+        solutionTitle: "Progeny Blessings",
+        solutionDesc: "Dedicated Santana Gopala mantra chants and Bal Gopal worship to invite positive life force."
+      },
+      {
+        challengeIcon: <HelpCircle size={20} />,
+        challengeTitle: "Astrological Progeny Dosha",
+        challengeDesc: "Planetary blockages in the 5th house of either partner's horoscope.",
+        solutionIcon: <Compass size={20} />,
+        solutionTitle: "Dosha Correction",
+        solutionDesc: "Personalized horoscope correction rituals and gemstone advice to pacify transit blockages."
+      },
+      {
+        challengeIcon: <Users size={20} />,
+        challengeTitle: "Pranic Conception Blocks",
+        challengeDesc: "Energetic imbalances in reproductive chakra points causing blockages.",
+        solutionIcon: <Globe size={20} />,
+        solutionTitle: "Chakra Vitalization",
+        solutionDesc: "Gentle energy flow realignments to harmonize the physical and spiritual bodies."
+      },
+      {
+        challengeIcon: <Shield size={20} />,
+        challengeTitle: "High Stress & Strain",
+        challengeDesc: "Conceiving difficulties causing severe marital strain and despair.",
+        solutionIcon: <Shield size={20} />,
+        solutionTitle: "Partner Compatibility",
+        solutionDesc: "Comforting spiritual guidance and couple meditation to restore trust and marital peace."
+      },
+      {
+        challengeIcon: <Zap size={20} />,
+        challengeTitle: "Unsuccessful IVF Cycles",
+        challengeDesc: "Medical fertility procedures failing repeatedly due to cosmic timings.",
+        solutionIcon: <CheckCircle2 size={20} />,
+        solutionTitle: "Muhurtha Synchronization",
+        solutionDesc: "Timing medical procedures with auspicious planetary hours (Muhurtha) for high success rates."
+      }
+    ],
+    "money-blessing": [
+      {
+        challengeIcon: <Sparkles size={20} />,
+        challengeTitle: "Stagnant Prosperity",
+        challengeDesc: "Earning just enough to survive but never achieving real savings or wealth.",
+        solutionIcon: <Sparkles size={20} />,
+        solutionTitle: "Lakshmi Alignment",
+        solutionDesc: "Invoking the blessings of Goddess Lakshmi through authentic fire rituals (Havan)."
+      },
+      {
+        challengeIcon: <Globe size={20} />,
+        challengeTitle: "Blocked Luck & Wealth",
+        challengeDesc: "Feeling like luck is completely blocked in investments or lottery.",
+        solutionIcon: <Globe size={20} />,
+        solutionTitle: "Fortune Activation",
+        solutionDesc: "Consecration of energized Shree Yantras at home to invite positive prosperity."
+      },
+      {
+        challengeIcon: <HelpCircle size={20} />,
+        challengeTitle: "Subconscious Wealth Barriers",
+        challengeDesc: "Hidden psychological barriers to earning or accepting money.",
+        solutionIcon: <Compass size={20} />,
+        solutionTitle: "Aura Purification",
+        solutionDesc: "Aura readings to clear emotional blockages and past trauma around survival."
+      },
+      {
+        challengeIcon: <Shield size={20} />,
+        challengeTitle: "Difficult Negotiations",
+        challengeDesc: "Struggles in closing important contracts, real estate sales, or agreements.",
+        solutionIcon: <Shield size={20} />,
+        solutionTitle: "Mercury Influence",
+        solutionDesc: "Mercury (Budh) mantra alignments to boost communication and favorable outcomes."
+      },
+      {
+        challengeIcon: <Zap size={20} />,
+        challengeTitle: "Lack of Savings",
+        challengeDesc: "Inability to retain money resulting in perpetual financial instability.",
+        solutionIcon: <CheckCircle2 size={20} />,
+        solutionTitle: "Abundance Shielding",
+        solutionDesc: "Thursday yellow-donation rituals to strengthen Jupiter's abundance influence."
+      }
+    ],
+    "drinking-problem": [
+      {
+        challengeIcon: <Clock size={20} />,
+        challengeTitle: "Emotional Restlessness",
+        challengeDesc: "Using substances as an escape from emotional overwhelm and stress.",
+        solutionIcon: <Sparkles size={20} />,
+        solutionTitle: "Emotional Strengthening",
+        solutionDesc: "Moon-strengthening mantras and drinking water from silver vessels to calm the mind."
+      },
+      {
+        challengeIcon: <Zap size={20} />,
+        challengeTitle: "Compulsive Cravings",
+        challengeDesc: "Feeling possessed by sudden, overwhelming urges to return to bad habits.",
+        solutionIcon: <Compass size={20} />,
+        solutionTitle: "Rahu Pacification",
+        solutionDesc: "Rahu/Ketu prayers and donation of dark blankets to pacify obsessive energies."
+      },
+      {
+        challengeIcon: <Users size={20} />,
+        challengeTitle: "Unhealthy Coping Habits",
+        challengeDesc: "Lacking the willpower or structured discipline to build healthy daily habits.",
+        solutionIcon: <Star size={20} />,
+        solutionTitle: "Habit Rejuvenation",
+        solutionDesc: "Vedic daily routine adjustments and Saturn-strengthening self-discipline methods."
+      },
+      {
+        challengeIcon: <Shield size={20} />,
+        challengeTitle: "Toxic Peer Influence",
+        challengeDesc: "Being easily swayed or pulled back into addiction by negative associations.",
+        solutionIcon: <Shield size={20} />,
+        solutionTitle: "Boundary Shielding",
+        solutionDesc: "Energizing a personal copper amulet (Kavach) for protection against social pressure."
+      },
+      {
+        challengeIcon: <HelpCircle size={20} />,
+        challengeTitle: "Depleted Pranic Energy",
+        challengeDesc: "Feeling spiritually and physically drained, leaving you vulnerable to relapse.",
+        solutionIcon: <CheckCircle2 size={20} />,
+        solutionTitle: "Prana Restructuring",
+        solutionDesc: "Pranic healing to revitalize the spirit, cleanse the liver aura, and restore natural energy."
+      }
+    ],
+    "depression": [
+      {
+        challengeIcon: <Heart size={20} />,
+        challengeTitle: "Heavy Grief & Pain",
+        challengeDesc: "Carrying an unbearable weight of past trauma, loss, or chronic heartache.",
+        solutionIcon: <Sparkles size={20} />,
+        solutionTitle: "Heart Chakra Healing",
+        solutionDesc: "Sacred heart chakra vibration therapy to release trapped negative emotions."
+      },
+      {
+        challengeIcon: <Hourglass size={20} />,
+        challengeTitle: "Chronic Overthinking",
+        challengeDesc: "A racing mind that prevents sleep, peace, and daily focus.",
+        solutionIcon: <Compass size={20} />,
+        solutionTitle: "Grounding Meditation",
+        solutionDesc: "Guided pranayama (breathing exercises) and earth grounding rituals to quiet thoughts."
+      },
+      {
+        challengeIcon: <Zap size={20} />,
+        challengeTitle: "Severe Transit Pressure",
+        challengeDesc: "Feeling sudden mental darkness caused by Saturn or Rahu transiting the natal Moon.",
+        solutionIcon: <Globe size={20} />,
+        solutionTitle: "Transit Pacification",
+        solutionDesc: "Gemstone recommendations and light therapies to counteract malefic transits."
+      },
+      {
+        challengeIcon: <Users size={20} />,
+        challengeTitle: "Deep Feelings of Isolation",
+        challengeDesc: "A persistent sense of loneliness and disconnection from purpose.",
+        solutionIcon: <Shield size={20} />,
+        solutionTitle: "Soul Connection",
+        solutionDesc: "Compassionate spiritual counseling to align your life choices with your higher calling."
+      },
+      {
+        challengeIcon: <HelpCircle size={20} />,
+        challengeTitle: "Aura Energy Blockages",
+        challengeDesc: "Carrying a \"dark cloud\" of stagnant energy that blocks positive vibrations.",
+        solutionIcon: <CheckCircle2 size={20} />,
+        solutionTitle: "Aura Sweeping",
+        solutionDesc: "Complete aura purification using holy waters and sacred herbal incense."
+      }
+    ],
+    "house-protection": [
+      {
+        challengeIcon: <Users size={20} />,
+        challengeTitle: "Tense Household Vibe",
+        challengeDesc: "Frequent domestic arguments and negative feelings inside the living space.",
+        solutionIcon: <Sparkles size={20} />,
+        solutionTitle: "Space Purification",
+        solutionDesc: "Mopping floors with energized sea salt and burning pure camphor daily to clear bad vibes."
+      },
+      {
+        challengeIcon: <Eye size={20} />,
+        challengeTitle: "External Jealousy (Nazar)",
+        challengeDesc: "Envies and toxic wishes from neighbors or visitors affecting household peace.",
+        solutionIcon: <Shield size={20} />,
+        solutionTitle: "Entrance Guarding",
+        solutionDesc: "Installing a consecrated horseshoe (open end up) and lemon-chili charms at the front door."
+      },
+      {
+        challengeIcon: <Hourglass size={20} />,
+        challengeTitle: "Bad Sleep & Nightmares",
+        challengeDesc: "Children or adults experiencing sleep disturbances or sensing uninvited presences.",
+        solutionIcon: <Compass size={20} />,
+        solutionTitle: "Bedroom Shielding",
+        solutionDesc: "Protection circle chants and placing sacred ash (Bhasma) barriers under the pillows."
+      },
+      {
+        challengeIcon: <Globe size={20} />,
+        challengeTitle: "Vastu Layout Doshas",
+        challengeDesc: "Architectural faults (e.g. wrong kitchen placement) disrupting energy flow.",
+        solutionIcon: <CheckCircle2 size={20} />,
+        solutionTitle: "Element Balancing",
+        solutionDesc: "Balancing fire, water, and air elements without structural demolition using Vastu color tips."
+      },
+      {
+        challengeIcon: <HelpCircle size={20} />,
+        challengeTitle: "Recurring Home Breakdowns",
+        challengeDesc: "Constant plumbing leaks, electronic issues, or vehicle problems.",
+        solutionIcon: <Star size={20} />,
+        solutionTitle: "Domestic Peace Yantra",
+        solutionDesc: "Installing a consecrated Vastu Yantra and Hanuman Chalisa plaque at the home core."
       }
     ]
   };

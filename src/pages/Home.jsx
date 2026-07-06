@@ -154,7 +154,14 @@ export default function Home({ navigateTo }) {
     { slug: "spiritual-healing", title: "Spiritual Healing", short: "Mind, body & soul alignment", icon: <Heart size={24} /> },
     { slug: "psychic-reading", title: "Psychic & Tarot Reading", short: "Divine intuitive clarity", icon: <HelpCircle size={24} /> },
     { slug: "love-marriage-solution", title: "Love Marriage Guidance", short: "Bless your union", icon: <Globe size={24} /> },
-    { slug: "breakup-solution", title: "Overcoming Breakups & Emotional Healing", short: "Mend broken hearts", icon: <Heart size={24} /> }
+    { slug: "breakup-solution", title: "Overcoming Breakups & Emotional Healing", short: "Mend broken hearts", icon: <Heart size={24} /> },
+    { slug: "work-problems", title: "Career & Work Problems", short: "Resolve career stagnation, job insecurity, and workplace disputes through planetary alignment.", icon: <Award size={24} /> },
+    { slug: "money-problems", title: "Financial & Debt Relief Solutions", short: "Overcome debt, financial obstacles, and monetary loss with Vedic astrology remedies.", icon: <Zap size={24} /> },
+    { slug: "childless-couples", title: "Remedies for Childless Couples", short: "Vedic astrology guidance and Santana Gopala rituals to overcome conception delays.", icon: <Users size={24} /> },
+    { slug: "money-blessing", title: "Money Blessing & Abundance Puja", short: "Invoke Goddess Lakshmi and Lord Kuber to attract wealth, luck, and business growth.", icon: <Sparkles size={24} /> },
+    { slug: "drinking-problem", title: "Astrological Remedies for Addiction & Drinking", short: "Strengthen the weak Moon and pacify afflicted Rahu to break free from bad habits.", icon: <Shield size={24} /> },
+    { slug: "depression", title: "Spiritual Aura Healing for Depression & Anxiety", short: "Soothe a troubled mind, release heavy grief, and realign your inner chakras.", icon: <Heart size={24} /> },
+    { slug: "house-protection", title: "House Protection & Vastu Shastra Cleansing", short: "Shield your home from evil eye, negative energies, and domestic disputes.", icon: <Shield size={24} /> }
   ];
 
   // Client Reviews Data (12 Symmetrical Testimonials)
