@@ -19,6 +19,13 @@ import imgSpiritualHealing from '../assets/spiritual_healing.webp';
 import imgPsychicReading from '../assets/psychic_reading.webp';
 import imgLoveMarriage from '../assets/love_marriage_solution.webp';
 import imgBreakup from '../assets/breakup_solution.webp';
+import imgWorkProblem from '../assets/work_problem.webp';
+import imgMoneyProblem from '../assets/image.png_202607061300.webp';
+import imgChildlessCouples from '../assets/childless-couples.webp';
+import imgMoneyBlessing from '../assets/money-blessing.webp';
+import imgDrinkingProblem from '../assets/drinking-problem.webp';
+import imgDepression from '../assets/Depression.webp';
+import imgHouseProtection from '../assets/house-protection.webp';
 import moonJourneyBg from '../assets/moon_journey_bg.png';
 
 // Guruji & Testimonials
@@ -36,7 +43,14 @@ const serviceImages = {
   "spiritual-healing": imgSpiritualHealing,
   "psychic-reading": imgPsychicReading,
   "love-marriage-solution": imgLoveMarriage,
-  "breakup-solution": imgBreakup
+  "breakup-solution": imgBreakup,
+  "work-problems": imgWorkProblem,
+  "money-problems": imgMoneyProblem,
+  "childless-couples": imgChildlessCouples,
+  "money-blessing": imgMoneyBlessing,
+  "drinking-problem": imgDrinkingProblem,
+  "depression": imgDepression,
+  "house-protection": imgHouseProtection
 };
 // Counter component for animated statistics
 function Counter({ end, duration = 1800, suffix = "" }) {

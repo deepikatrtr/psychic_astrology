@@ -53,30 +53,42 @@ jobs:
           run_id="${{ github.run_id }}"
           repository="${{ github.repository }}"
           
-          echo "Listing artifacts for run $run_id..."
+          echo "Listing all repository artifacts named 'github-pages'..."
           artifacts_json=$(curl -s -H "Authorization: Bearer $GITHUB_TOKEN" \
-            "https://api.github.com/repos/$repository/actions/runs/$run_id/artifacts")
-            
-          ids=$(echo "$artifacts_json" | jq -r '.artifacts[] | select(.name=="github-pages") | .id')
-          count=$(echo "$ids" | wc -w)
+            "https://api.github.com/repos/$repository/actions/artifacts?name=github-pages")
           
-          echo "Found $count artifact(s) named 'github-pages'."
-          if [ "$count" -le 1 ]; then
-            echo "No duplicates to remove."
-            exit 0
-          fi
-          
-          first=true
-          for id in $ids; do
-            if $first; then
-              echo "Keeping artifact id $id"
-              first=false
-              continue
+          echo "Checking for duplicate artifacts from other runs..."
+          echo "$artifacts_json" | jq -c '.artifacts[]' | while read -r artifact; do
+            art_id=$(echo "$artifact" | jq -r '.id')
+            art_run_id=$(echo "$artifact" | jq -r '.workflow_run.id')
+            if [ "$art_run_id" != "$run_id" ]; then
+              echo "Deleting duplicate artifact id $art_id from run $art_run_id (current run is $run_id)"
+              curl -s -X DELETE -H "Authorization: Bearer $GITHUB_TOKEN" \
+                "https://api.github.com/repos/$repository/actions/artifacts/$art_id"
             fi
-            echo "Deleting duplicate artifact id $id"
-            curl -s -X DELETE -H "Authorization: Bearer $GITHUB_TOKEN" \
-              "https://api.github.com/repos/$repository/actions/artifacts/$id"
           done
+
+          echo "Checking for duplicate artifacts inside the current run..."
+          current_run_artifacts=$(curl -s -H "Authorization: Bearer $GITHUB_TOKEN" \
+            "https://api.github.com/repos/$repository/actions/runs/$run_id/artifacts")
+          
+          ids=$(echo "$current_run_artifacts" | jq -r '.artifacts[] | select(.name=="github-pages") | .id')
+          count=$(echo "$ids" | wc -w)
+          echo "Found $count current run artifact(s) named 'github-pages'."
+          
+          if [ "$count" -gt 1 ]; then
+            first=true
+            for id in $ids; do
+              if $first; then
+                echo "Keeping current run artifact id $id"
+                first=false
+                continue
+              fi
+              echo "Deleting duplicate current run artifact id $id"
+              curl -s -X DELETE -H "Authorization: Bearer $GITHUB_TOKEN" \
+                "https://api.github.com/repos/$repository/actions/artifacts/$id"
+            done
+          fi
         shell: bash
 
       - name: Deploy to GitHub Pages
