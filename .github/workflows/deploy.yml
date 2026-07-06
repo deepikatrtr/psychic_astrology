@@ -9,6 +9,7 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  actions: write
 
 concurrency:
   group: 'pages'
@@ -43,6 +44,40 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: './dist'
+
+      - name: Remove duplicate pages artifacts
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          run_id="${{ github.run_id }}"
+          repository="${{ github.repository }}"
+          
+          echo "Listing artifacts for run $run_id..."
+          artifacts_json=$(curl -s -H "Authorization: Bearer $GITHUB_TOKEN" \
+            "https://api.github.com/repos/$repository/actions/runs/$run_id/artifacts")
+            
+          ids=$(echo "$artifacts_json" | jq -r '.artifacts[] | select(.name=="github-pages") | .id')
+          count=$(echo "$ids" | wc -w)
+          
+          echo "Found $count artifact(s) named 'github-pages'."
+          if [ "$count" -le 1 ]; then
+            echo "No duplicates to remove."
+            exit 0
+          fi
+          
+          first=true
+          for id in $ids; do
+            if $first; then
+              echo "Keeping artifact id $id"
+              first=false
+              continue
+            fi
+            echo "Deleting duplicate artifact id $id"
+            curl -s -X DELETE -H "Authorization: Bearer $GITHUB_TOKEN" \
+              "https://api.github.com/repos/$repository/actions/artifacts/$id"
+          done
+        shell: bash
 
       - name: Deploy to GitHub Pages
         id: deployment
