@@ -1,14 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { 
   Phone, MessageSquare, Compass, Award, Globe, Heart, Shield, 
   Sparkles, Star, Zap, Check, Gem, Briefcase, Flower2, Flame, 
   Calendar, Users
 } from 'lucide-react';
 import astrologerImg from '../assets/astrologer.webp';
-import sacredTemple from '../assets/sacred_temple.png';
+import sacredTemple from '../assets/sacred_temple.webp';
 import chakraImg from '../assets/meditating_chakras.webp';
 
-export default function About({ navigateTo }) {
+export default function About() {
+  const navigate = useNavigate();
   const timeline = [
     { y: "01", t: "Traditional Knowledge", d: "Built on years of studying Vedic Astrology, Lal Kitab, and Nadi Astrology." },
     { y: "02", t: "Personalized Consultations", d: "Every horoscope is carefully analyzed to provide guidance tailored to your unique life journey." },
@@ -170,7 +172,7 @@ export default function About({ navigateTo }) {
             </p>
 
             <button 
-              onClick={() => navigateTo('book')}
+              onClick={() => navigate('/contact#book-session')}
               className="primary-button"
               style={{
                 padding: '14px 28px',
@@ -291,6 +293,7 @@ export default function About({ navigateTo }) {
               <img 
                 src={sacredTemple} 
                 alt="Sacred Temple Domes" 
+                loading="lazy"
                 style={{
                   width: '100%',
                   height: '100%',

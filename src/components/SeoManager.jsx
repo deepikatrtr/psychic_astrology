@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
-import socialImage from '../assets/contact-cosmic-hero.png';
+import { useLocation } from 'react-router-dom';
+import socialImage from '../assets/contact-cosmic-hero.webp';
 
 const SITE_NAME = 'Best Astrologer in London';
 const PHONE = '+447722131999';
@@ -130,8 +131,29 @@ function upsertCanonical(url) {
   element.setAttribute('href', url);
 }
 
-export default function SeoManager({ currentPage, serviceSlug }) {
+export default function SeoManager() {
+  const location = useLocation();
+
+  // Derive currentPage and serviceSlug from the real URL path
+  const pathname = location.pathname;
+  let currentPage = 'home';
+  let serviceSlug = null;
+
+  if (pathname === '/' || pathname === '') {
+    currentPage = 'home';
+  } else if (pathname.startsWith('/services/') && pathname.length > '/services/'.length) {
+    currentPage = 'service-detail';
+    serviceSlug = pathname.replace('/services/', '').replace(/\/$/, '');
+  } else if (pathname.startsWith('/services')) {
+    currentPage = 'services';
+  } else if (pathname.startsWith('/about')) {
+    currentPage = 'about';
+  } else if (pathname.startsWith('/contact')) {
+    currentPage = 'contact';
+  }
+
   useEffect(() => {
+
     const isService = currentPage === 'service-detail';
     const service = serviceSeo[serviceSlug] || serviceSeo.love;
     const seo = isService
@@ -142,9 +164,8 @@ export default function SeoManager({ currentPage, serviceSlug }) {
         }
       : pageSeo[currentPage] || pageSeo.home;
 
-    const route = isService ? `services/${serviceSlug || 'love'}` : currentPage;
-    const baseUrl = `${window.location.origin}${window.location.pathname}`;
-    const pageUrl = currentPage === 'home' ? baseUrl : `${baseUrl}#${route}`;
+    const baseSiteUrl = `${window.location.origin}/`;
+    const pageUrl = `${window.location.origin}${location.pathname}`;
     const imageUrl = new URL(socialImage, window.location.origin).href;
 
     document.title = seo.title;
@@ -169,10 +190,10 @@ export default function SeoManager({ currentPage, serviceSlug }) {
     const organisationSchema = {
       '@context': 'https://schema.org',
       '@type': 'ProfessionalService',
-      '@id': `${baseUrl}#business`,
+      '@id': `${baseSiteUrl}#business`,
       name: SITE_NAME,
       description: pageSeo.home.description,
-      url: baseUrl,
+      url: baseSiteUrl,
       image: imageUrl,
       telephone: PHONE,
       email: EMAIL,
@@ -224,7 +245,7 @@ export default function SeoManager({ currentPage, serviceSlug }) {
           name: service.name,
           description: service.description,
           url: pageUrl,
-          provider: { '@id': `${baseUrl}#business` },
+          provider: { '@id': `${baseSiteUrl}#business` },
           areaServed: 'London and worldwide'
         }
       : {
@@ -236,7 +257,7 @@ export default function SeoManager({ currentPage, serviceSlug }) {
           isPartOf: {
             '@type': 'WebSite',
             name: SITE_NAME,
-            url: baseUrl
+            url: baseSiteUrl
           }
         };
 
@@ -248,7 +269,7 @@ export default function SeoManager({ currentPage, serviceSlug }) {
           '@type': 'ListItem',
           position: 1,
           name: 'Home',
-          item: baseUrl
+          item: baseSiteUrl
         },
         ...(currentPage === 'home'
           ? []

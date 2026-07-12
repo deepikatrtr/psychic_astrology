@@ -1,6 +1,8 @@
 import React from 'react';
-import { Phone, Mail, ChevronRight, Send } from 'lucide-react';
-import gurujiLogo from '../assets/splash_guru.png';
+import { Phone, Mail, ChevronRight } from 'lucide-react';
+import { Link, useNavigate } from 'react-router-dom';
+import gurujiLogo from '../assets/splash_guru.webp';
+import zodiacCouple from '../assets/zodiac_couple.webp';
 
 
 
@@ -19,7 +21,8 @@ const HeaderWithLine = ({ title }) => (
 
 
 
-export default function Footer({ navigateTo }) {
+export default function Footer() {
+  const navigate = useNavigate();
   return (
     <footer style={{
       background: '#03050c',
@@ -84,25 +87,26 @@ export default function Footer({ navigateTo }) {
           <div>
             <HeaderWithLine title="Quick Navigation" />
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '12px', padding: 0 }}>
-              {['Home', 'About Us', 'Services', 'Specialist In', 'Contact Us', 'Blog', 'Testimonials', 'FAQs'].map(link => (
-                <li key={link}>
-                  <a href={`#${link.toLowerCase().replace(/\s+/g, '-')}`}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      if (link === 'Home') navigateTo('home');
-                      else if (link === 'About Us') navigateTo('about');
-                      else if (link === 'Services' || link === 'Specialist In') navigateTo('home');
-                      else if (link === 'Contact Us') navigateTo('contact');
-                      else navigateTo('home');
-                    }}
+              {[
+                { label: 'Home', to: '/' },
+                { label: 'About Us', to: '/about' },
+                { label: 'Services', to: '/services' },
+                { label: 'Contact Us', to: '/contact' },
+                { label: 'Blog', to: '/' },
+                { label: 'Testimonials', to: '/' },
+                { label: 'FAQs', to: '/' }
+              ].map(link => (
+                <li key={link.label}>
+                  <Link
+                    to={link.to}
                     style={{
                       textDecoration: 'none', color: '#a0a5b5', fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'color 0.3s'
                     }}
-                    onMouseEnter={e => e.target.style.color = 'var(--gold)'}
-                    onMouseLeave={e => e.target.style.color = '#a0a5b5'}
+                    onMouseEnter={e => e.currentTarget.style.color = 'var(--gold)'}
+                    onMouseLeave={e => e.currentTarget.style.color = '#a0a5b5'}
                   >
-                    <ChevronRight size={12} style={{ color: 'var(--gold)' }} /> {link}
-                  </a>
+                    <ChevronRight size={12} style={{ color: 'var(--gold)' }} /> {link.label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -123,19 +127,16 @@ export default function Footer({ navigateTo }) {
                 { label: 'Kundli & Horoscope', slug: 'kundli' }
               ].map(s => (
                 <li key={s.label}>
-                  <a href={`#services/${s.slug}`}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      navigateTo('service-detail', s.slug);
-                    }}
+                  <Link
+                    to={`/services/${s.slug}`}
                     style={{
                       textDecoration: 'none', color: '#a0a5b5', fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'color 0.3s'
                     }}
-                    onMouseEnter={e => e.target.style.color = 'var(--gold)'}
-                    onMouseLeave={e => e.target.style.color = '#a0a5b5'}
+                    onMouseEnter={e => e.currentTarget.style.color = 'var(--gold)'}
+                    onMouseLeave={e => e.currentTarget.style.color = '#a0a5b5'}
                   >
                     <ChevronRight size={12} style={{ color: 'var(--gold)' }} /> {s.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -147,16 +148,13 @@ export default function Footer({ navigateTo }) {
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '12px', padding: 0 }}>
               {['Privacy Policy', 'Terms & Conditions', 'Refund Policy', 'Disclaimer', 'Sitemap'].map(link => (
                 <li key={link}>
-                  <a href="#"
-                    onClick={(e) => e.preventDefault()}
+                  <span
                     style={{
-                      textDecoration: 'none', color: '#a0a5b5', fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', transition: 'color 0.3s'
+                      color: '#a0a5b5', fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', cursor: 'default'
                     }}
-                    onMouseEnter={e => e.target.style.color = 'var(--gold)'}
-                    onMouseLeave={e => e.target.style.color = '#a0a5b5'}
                   >
                     <ChevronRight size={12} style={{ color: 'var(--gold)' }} /> {link}
-                  </a>
+                  </span>
                 </li>
               ))}
             </ul>
@@ -236,7 +234,7 @@ export default function Footer({ navigateTo }) {
               right: '-50px',
               width: '300px',
               height: '300px',
-              //  backgroundImage: 'url(/zodiac_couple.png)', /* fallback if any */
+               backgroundImage: `url(${zodiacCouple})`, /* fallback if any */
               backgroundSize: 'contain',
               backgroundRepeat: 'no-repeat',
               opacity: 0.1,

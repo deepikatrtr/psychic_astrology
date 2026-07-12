@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
-import zodiacWheelImg from '../assets/chakra.png';
-import nebulaSmokeImg from '../assets/nebula_smoke.png';
-import serviceDetailsBg from '../assets/service_details_bg.png';
+import zodiacWheelImg from '../assets/chakra.webp';
+import nebulaSmokeImg from '../assets/nebula_smoke.webp';
+import serviceDetailsBg from '../assets/service_details_bg.webp';
 
 export default function CosmicBackground({ children, isServiceDetail }) {
   // Generate random particles configurations once

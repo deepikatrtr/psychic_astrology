@@ -1,21 +1,46 @@
 import React, { useState } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
-import gurujiLogo from '../assets/splash_guru.png';
+import { NavLink, useNavigate } from 'react-router-dom';
+import gurujiLogo from '../assets/splash_guru.webp';
 
-export default function Navbar({ currentPage, navigateTo }) {
+export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   const menuItems = [
-    { label: 'Home', id: 'home' },
-    { label: 'About', id: 'about' },
-    { label: 'Services', id: 'services' },
-    { label: 'Contact Us', id: 'contact' }
+    { label: 'Home', path: '/' },
+    { label: 'About', path: '/about' },
+    { label: 'Services', path: '/services' },
+    { label: 'Contact Us', path: '/contact' }
   ];
 
-  const handleNav = (pageId) => {
-    navigateTo(pageId);
-    setIsOpen(false);
-  };
+  const navLinkStyle = ({ isActive }) => ({
+    textDecoration: 'none',
+    fontFamily: 'var(--font-display)',
+    fontSize: '13px',
+    fontWeight: isActive ? '700' : '500',
+    letterSpacing: '0.08em',
+    textTransform: 'uppercase',
+    color: isActive ? 'var(--gold-soft)' : 'var(--text-primary)',
+    textShadow: isActive ? '0 0 8px rgba(212, 175, 55, 0.5)' : 'none',
+    transition: 'all 0.3s ease',
+    borderBottom: isActive ? '2px solid var(--gold)' : '2px solid transparent',
+    paddingBottom: '4px'
+  });
+
+  const mobileNavLinkStyle = ({ isActive }) => ({
+    textDecoration: 'none',
+    fontFamily: 'var(--font-display)',
+    fontSize: '16px',
+    fontWeight: isActive ? '700' : '500',
+    letterSpacing: '0.1em',
+    textTransform: 'uppercase',
+    color: isActive ? 'var(--gold-soft)' : 'var(--text-primary)',
+    padding: '10px 0',
+    borderBottom: '1px solid rgba(255, 255, 255, 0.05)',
+    transition: 'all 0.3s ease',
+    display: 'block'
+  });
 
   return (
     <nav style={{
@@ -38,8 +63,8 @@ export default function Navbar({ currentPage, navigateTo }) {
         padding: '0 30px'
       }}>
         {/* Brand Logo */}
-        <div 
-          onClick={() => handleNav('home')}
+        <div
+          onClick={() => { navigate('/'); setIsOpen(false); }}
           style={{
             cursor: 'pointer',
             display: 'flex',
@@ -81,7 +106,7 @@ export default function Navbar({ currentPage, navigateTo }) {
               letterSpacing: '0.3em',
               marginTop: '2px'
             }}>
-              PSYCHIC ASTROLOGY & HEALING
+              PSYCHIC ASTROLOGY &amp; HEALING
             </span>
           </div>
         </div>
@@ -89,41 +114,19 @@ export default function Navbar({ currentPage, navigateTo }) {
         {/* Desktop Navigation Links */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '30px' }} className="desktop-only">
           <ul style={{ display: 'flex', listStyle: 'none', gap: '30px', alignItems: 'center' }}>
-            {menuItems.map(item => {
-              const isActive = currentPage === item.id || (item.id === 'services' && currentPage === 'service-detail');
-              return (
-                <li key={item.id}>
-                  <a
-                    href={`#${item.id}`}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      handleNav(item.id);
-                    }}
-                    style={{
-                      textDecoration: 'none',
-                      fontFamily: 'var(--font-display)',
-                      fontSize: '13px',
-                      fontWeight: isActive ? '700' : '500',
-                      letterSpacing: '0.08em',
-                      textTransform: 'uppercase',
-                      color: isActive ? 'var(--gold-soft)' : 'var(--text-primary)',
-                      textShadow: isActive ? '0 0 8px rgba(212, 175, 55, 0.5)' : 'none',
-                      transition: 'all 0.3s ease',
-                      borderBottom: isActive ? '2px solid var(--gold)' : '2px solid transparent',
-                      paddingBottom: '4px'
-                    }}
-                    onMouseEnter={e => {
-                      if (!isActive) e.target.style.color = 'var(--gold-soft)';
-                    }}
-                    onMouseLeave={e => {
-                      if (!isActive) e.target.style.color = 'var(--text-primary)';
-                    }}
-                  >
-                    {item.label}
-                  </a>
-                </li>
-              );
-            })}
+            {menuItems.map(item => (
+              <li key={item.path}>
+                <NavLink
+                  to={item.path}
+                  end={item.path === '/'}
+                  style={navLinkStyle}
+                  onMouseEnter={e => { if (!e.currentTarget.classList.contains('active')) e.currentTarget.style.color = 'var(--gold-soft)'; }}
+                  onMouseLeave={e => { if (!e.currentTarget.classList.contains('active')) e.currentTarget.style.color = 'var(--text-primary)'; }}
+                >
+                  {item.label}
+                </NavLink>
+              </li>
+            ))}
           </ul>
 
           {/* Quick Call Button */}
@@ -174,33 +177,17 @@ export default function Navbar({ currentPage, navigateTo }) {
           width: '100%',
           zIndex: 99
         }}>
-          {menuItems.map(item => {
-            const isActive = currentPage === item.id || (item.id === 'services' && currentPage === 'service-detail');
-            return (
-              <a
-                key={item.id}
-                href={`#${item.id}`}
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleNav(item.id);
-                }}
-                style={{
-                  textDecoration: 'none',
-                  fontFamily: 'var(--font-display)',
-                  fontSize: '16px',
-                  fontWeight: isActive ? '700' : '500',
-                  letterSpacing: '0.1em',
-                  textTransform: 'uppercase',
-                  color: isActive ? 'var(--gold-soft)' : 'var(--text-primary)',
-                  padding: '10px 0',
-                  borderBottom: '1px solid rgba(255, 255, 255, 0.05)',
-                  transition: 'all 0.3s ease'
-                }}
-              >
-                {item.label}
-              </a>
-            );
-          })}
+          {menuItems.map(item => (
+            <NavLink
+              key={item.path}
+              to={item.path}
+              end={item.path === '/'}
+              style={mobileNavLinkStyle}
+              onClick={() => setIsOpen(false)}
+            >
+              {item.label}
+            </NavLink>
+          ))}
           <a
             href="tel:+447722131999"
             style={{

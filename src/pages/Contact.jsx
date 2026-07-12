@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import {
   CalendarDays,
   Clock3,
@@ -18,7 +19,7 @@ import {
   Users
 } from 'lucide-react';
 
-import contactHero from '../assets/contact-cosmic-hero.png';
+import contactHero from '../assets/contact-cosmic-hero.webp';
 import './Contact.css';
 
 const PHONE_NUMBER = '+447722131999';
@@ -96,12 +97,22 @@ const channels = [
 ];
 
 export default function Contact() {
+  const location = useLocation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
     message: ''
   });
+
+  // Scroll to booking form if navigated via /contact#book-session
+  useEffect(() => {
+    if (location.hash === '#book-session') {
+      setTimeout(() => {
+        document.getElementById('book-session')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 100);
+    }
+  }, [location.hash]);
 
   const showToast = (detail) => {
     window.dispatchEvent(new CustomEvent('show-toast', { detail }));

@@ -529,7 +529,7 @@ a.contact-channel:hover {
   padding: 80px 0;
   position: relative;
   background-color: var(--bg-deep);
-  background-image: url('../assets/sacred_temple.png');
+  background-image: url('../assets/sacred_temple.webp');
   background-size: cover;
   background-position: right center;
   background-attachment: fixed;

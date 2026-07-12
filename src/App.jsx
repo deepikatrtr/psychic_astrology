@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import { Phone, ArrowUp, Clock, Mail, MapPin } from 'lucide-react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import CosmicBackground from './components/CosmicBackground';
+import SeoManager from './components/SeoManager';
 
 // Pages
 import Home from './pages/Home';
@@ -14,32 +16,60 @@ import SplashScreen from './components/SplashScreen';
 
 import './App.css';
 
-export default function App() {
-  const [currentPage, setCurrentPage] = useState('home');
-  const [selectedServiceSlug, setSelectedServiceSlug] = useState(null);
+// 404 Not Found page
+function NotFound() {
+  const navigate = useNavigate();
+  return (
+    <div style={{
+      minHeight: '60vh',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      textAlign: 'center',
+      padding: '60px 20px'
+    }}>
+      <h1 style={{ fontFamily: 'var(--font-display)', color: 'var(--gold)', fontSize: '80px', margin: 0 }}>404</h1>
+      <p style={{ color: 'var(--text-muted)', fontSize: '18px', margin: '20px 0 40px' }}>
+        This page could not be found.
+      </p>
+      <button
+        onClick={() => navigate('/')}
+        className="primary-button"
+        style={{ padding: '14px 32px', fontSize: '13px', cursor: 'pointer', border: 'none' }}
+      >
+        Return Home
+      </button>
+    </div>
+  );
+}
+
+// Inner app — uses router hooks, so must be inside BrowserRouter
+function AppInner() {
+  const location = useLocation();
   const [showSplash, setShowSplash] = useState(true);
   const [toastMessage, setToastMessage] = useState('');
   const [showScrollTop, setShowScrollTop] = useState(false);
 
+  const isServiceDetail = location.pathname.startsWith('/services/') && location.pathname.length > '/services/'.length;
+
+  // Scroll to top on route change (unless hash anchor is present)
+  useEffect(() => {
+    if (!location.hash) {
+      window.scrollTo(0, 0);
+    }
+  }, [location.pathname, location.hash]);
 
   // Monitor scroll for Scroll-to-Top visibility
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 300) {
-        setShowScrollTop(true);
-      } else {
-        setShowScrollTop(false);
-      }
-    };
+    const handleScroll = () => setShowScrollTop(window.scrollY > 300);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   // Listen to show-toast custom events
   useEffect(() => {
-    const handleShowToast = (e) => {
-      setToastMessage(e.detail);
-    };
+    const handleShowToast = (e) => setToastMessage(e.detail);
     window.addEventListener('show-toast', handleShowToast);
     return () => window.removeEventListener('show-toast', handleShowToast);
   }, []);
@@ -52,88 +82,14 @@ export default function App() {
     }
   }, [toastMessage]);
 
-  // Hash-based Routing Sync
-  useEffect(() => {
-    const handleHashChange = () => {
-      const hash = window.location.hash.replace('#', '');
-      const isBookingLink = hash === 'book';
-      
-      if (hash.startsWith('services/')) {
-        const slug = hash.replace('services/', '');
-        setCurrentPage('service-detail');
-        setSelectedServiceSlug(slug);
-      } else if (hash) {
-        // Keep legacy booking links working after merging both pages.
-        setCurrentPage(hash === 'book' ? 'contact' : hash);
-        setSelectedServiceSlug(null);
-      } else {
-        // Default to Home
-        setCurrentPage('home');
-        setSelectedServiceSlug(null);
-      }
-      
-      // Booking CTAs jump to the form on the combined page; all other links start at the top.
-      if (isBookingLink) {
-        requestAnimationFrame(() => {
-          document.getElementById('book-session')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        });
-      } else {
-        window.scrollTo(0, 0);
-      }
-    };
-
-    window.addEventListener('hashchange', handleHashChange);
-    
-    // Sync on initial mount
-    handleHashChange();
-
-    return () => window.removeEventListener('hashchange', handleHashChange);
-  }, []);
-
-  // Scroll to top on page/slug state transitions (ensures DOM is updated)
-  useEffect(() => {
-    if (window.location.hash !== '#book') {
-      window.scrollTo(0, 0);
-    }
-  }, [currentPage, selectedServiceSlug]);
-
-  // Safe Navigation Helper
-  const navigateTo = (pageId, serviceSlug = null) => {
-    if (pageId === 'service-detail' && serviceSlug) {
-      window.location.hash = `services/${serviceSlug}`;
-    } else {
-      window.location.hash = pageId;
-    }
-    if (pageId !== 'book') {
-      window.scrollTo(0, 0);
-    }
-  };
-
-  // Render active page component
-  const renderPage = () => {
-    switch (currentPage) {
-      case 'home':
-        return <Home navigateTo={navigateTo} />;
-      case 'about':
-        return <About navigateTo={navigateTo} />;
-      case 'services':
-        return <Services navigateTo={navigateTo} />;
-      case 'service-detail':
-        return <ServiceDetail slug={selectedServiceSlug} navigateTo={navigateTo} />;
-      case 'contact':
-        return <Contact />;
-      default:
-        return <Home navigateTo={navigateTo} />;
-    }
-  };
-
   if (showSplash) {
     return <SplashScreen onComplete={() => setShowSplash(false)} />;
   }
 
   return (
     <>
-      <CosmicBackground isServiceDetail={currentPage === 'service-detail'}>
+      <SeoManager />
+      <CosmicBackground isServiceDetail={isServiceDetail}>
         {/* Top Info Bar (above Navbar) */}
         <div style={{
           background: '#040817',
@@ -173,7 +129,7 @@ export default function App() {
           </div>
         </div>
 
-        <Navbar currentPage={currentPage} navigateTo={navigateTo} />
+        <Navbar />
 
         {/* Global Ticker Banner (below Navbar) */}
         <div style={{
@@ -223,17 +179,22 @@ export default function App() {
             <span>✦ 8:00 AM-8:00 PM</span>
           </div>
         </div>
-        
+
         <main style={{ minHeight: 'calc(100vh - 80px - 340px)' }}>
-          {renderPage()}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/services/:slug" element={<ServiceDetail />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
         </main>
 
-        <Footer navigateTo={navigateTo} />
+        <Footer />
       </CosmicBackground>
 
       {/* WhatsApp Floating Button - Bottom Right */}
-      {/* WhatsApp FAB - Bottom Right */}
-      {/* WhatsApp FAB - Bottom Right */}
       <a
         href="https://wa.me/447722131999"
         aria-label="Chat on WhatsApp"
@@ -259,7 +220,6 @@ export default function App() {
         onMouseEnter={e => { e.currentTarget.style.transform = 'scale(1.12)'; e.currentTarget.style.boxShadow = '0 6px 28px rgba(37,211,102,0.7)'; }}
         onMouseLeave={e => { e.currentTarget.style.transform = 'scale(1)'; e.currentTarget.style.boxShadow = '0 4px 20px rgba(37,211,102,0.5)'; }}
       >
-        {/* Official WhatsApp SVG Logo */}
         <svg viewBox="0 0 32 32" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M16 3C8.82 3 3 8.82 3 16c0 2.3.62 4.47 1.7 6.34L3 29l6.85-1.67A13 13 0 0016 29c7.18 0 13-5.82 13-13S23.18 3 16 3z" fill="#fff"/>
           <path d="M16 5.2A10.8 10.8 0 005.2 16c0 2.02.56 3.91 1.54 5.53L5.5 26.5l5.1-1.22A10.8 10.8 0 1016 5.2z" fill="#25d366"/>
@@ -267,7 +227,7 @@ export default function App() {
         </svg>
       </a>
 
-      {/* Call FAB - Bottom Right (Positioned above WhatsApp FAB) */}
+      {/* Call FAB - Bottom Right (above WhatsApp FAB) */}
       <a
         href="tel:+447722131999"
         aria-label="Call Guruji"
@@ -289,18 +249,16 @@ export default function App() {
           textDecoration: 'none',
           color: '#fff'
         }}
-        onMouseEnter={e => { e.currentTarget.style.transform = 'scale(1.1) translateY(-2px)'; e.currentTarget.style.boxShadow = 'var(--btn-glow-shadow)'; }}
-        onMouseLeave={e => { e.currentTarget.style.transform = 'scale(1) translateY(0)'; e.currentTarget.style.boxShadow = 'var(--btn-glow-shadow)'; }}
+        onMouseEnter={e => { e.currentTarget.style.transform = 'scale(1.1) translateY(-2px)'; }}
+        onMouseLeave={e => { e.currentTarget.style.transform = 'scale(1) translateY(0)'; }}
       >
         <Phone size={24} />
       </a>
 
       {/* Scroll to Top Arrow Button in Bottom Left */}
       {showScrollTop && (
-        <button 
-          onClick={() => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          }}
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           style={{
             position: 'fixed',
             bottom: '30px',
@@ -335,4 +293,8 @@ export default function App() {
       )}
     </>
   );
+}
+
+export default function App() {
+  return <AppInner />;
 }

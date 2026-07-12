@@ -1,4 +1,5 @@
 import React from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import { 
   Heart, Shield, Sparkles, Check, Phone, ArrowRight, Zap, 
   HelpCircle, Globe, CheckCircle2, Award, Calendar, Star,
@@ -18,7 +19,7 @@ import imgSpiritualHealing from '../assets/spiritual_healing.webp';
 import imgPsychicReading from '../assets/psychic_reading.webp';
 import imgLoveMarriage from '../assets/love_marriage_solution.webp';
 import imgBreakup from '../assets/breakup_solution.webp';
-import imgChakra from '../assets/chakra.png';
+import imgChakra from '../assets/chakra.webp';
 import imgWorkProblem from '../assets/work_problem.webp';
 import imgMoneyProblem from '../assets/image.png_202607061300.webp';
 import imgChildlessCouples from '../assets/childless-couples.webp';
@@ -49,7 +50,9 @@ const serviceImages = {
   "house-protection": imgHouseProtection
 };
 
-export default function ServiceDetail({ slug, navigateTo }) {
+export default function ServiceDetail() {
+  const { slug } = useParams();
+  const navigate = useNavigate();
   // 19 Services basic info
   const services = [
     { 
@@ -1129,7 +1132,7 @@ export default function ServiceDetail({ slug, navigateTo }) {
             {/* Action Buttons */}
             <div style={{ display: 'flex', gap: '15px' }} id="hero-buttons">
               <button 
-                onClick={() => navigateTo('book')}
+                onClick={() => navigate('/contact#book-session')}
                 className="primary-button"
                 style={{ padding: '12px 24px', display: 'flex', alignItems: 'center', gap: '8px' }}
               >
@@ -1514,7 +1517,7 @@ export default function ServiceDetail({ slug, navigateTo }) {
               {services.filter(s => s.slug !== slug).slice(0, 6).map(other => (
                 <li key={other.slug} style={{ borderBottom: '1px solid rgba(255, 255, 255, 0.03)', paddingBottom: '8px' }}>
                   <button
-                    onClick={() => navigateTo('service-detail', other.slug)}
+                    onClick={() => navigate(`/services/${other.slug}`)}
                     style={{
                       background: 'none',
                       border: 'none',
@@ -1564,7 +1567,7 @@ export default function ServiceDetail({ slug, navigateTo }) {
             </p>
             <div style={{ display: 'flex', gap: '15px', justifyContent: 'center' }} id="cta-buttons">
               <button 
-                onClick={() => navigateTo('book')}
+                onClick={() => navigate('/contact#book-session')}
                 className="primary-button"
                 style={{ padding: '12px 24px', display: 'flex', alignItems: 'center', gap: '8px' }}
               >

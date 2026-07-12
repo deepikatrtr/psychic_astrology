@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { 
   Heart, Shield, Sparkles, Zap, HelpCircle, Globe, 
   CheckCircle2, Star, Award, Users, Flower2, Flame, Calendar, MessageSquare
@@ -51,7 +52,8 @@ const serviceImages = {
   "house-protection": imgHouseProtection
 };
 
-export default function Services({ navigateTo }) {
+export default function Services() {
+  const navigate = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -442,7 +444,7 @@ export default function Services({ navigateTo }) {
                   borderRadius: '20px',
                   border: '1.5px solid rgba(212, 175, 55, 0.2)'
                 }}
-                onClick={() => navigateTo('service-detail', s.slug)}
+                onClick={() => navigate(`/services/${s.slug}`)}
               >
                 {/* Image Section */}
                 <div style={{
@@ -475,6 +477,7 @@ export default function Services({ navigateTo }) {
                   <img 
                     src={serviceImages[s.slug]} 
                     alt={s.title} 
+                    loading="lazy"
                     style={{
                       width: '100%',
                       height: '100%',

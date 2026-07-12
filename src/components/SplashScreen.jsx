@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import splashGuru from '../assets/splash_guru.png';
+import splashGuru from '../assets/splash_guru.webp';
 
 const SPLASH_DURATION = 3000;
 const EXIT_DURATION = 700;
@@ -51,6 +51,10 @@ export default function SplashScreen({ onComplete }) {
           from { opacity: 0; transform: scale(0.97); }
           to   { opacity: 1; transform: scale(1); }
         }
+        @keyframes splashDropFromTop {
+          from { opacity: 0; transform: translateY(-150px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
         @keyframes splashProgress {
           from { width: 0%; }
           to   { width: 100%; }
@@ -68,7 +72,7 @@ export default function SplashScreen({ onComplete }) {
         borderRadius: '50%',
         overflow: 'hidden',
         border: '3px solid rgba(212,175,55,0.6)',
-        animation: 'splashPulse 2s ease-in-out infinite'
+        animation: 'splashDropFromTop 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, splashPulse 2s ease-in-out infinite'
       }}>
         <img
           src={splashGuru}

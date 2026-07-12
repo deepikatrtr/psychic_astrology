@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { 
   Phone, MessageSquare, ChevronLeft, ChevronRight, HelpCircle, 
   Award, Globe, Heart, Shield, Sparkles, Star, Zap, CheckCircle2,
   MapPin, Mail, Users
 } from 'lucide-react';
-import chakraWheel from '../assets/chakra.png';
+import chakraWheel from '../assets/chakra.webp';
 
 // Service Images
 import imgLove from '../assets/ex_love_back.webp';
@@ -26,7 +27,7 @@ import imgMoneyBlessing from '../assets/money-blessing.webp';
 import imgDrinkingProblem from '../assets/drinking-problem.webp';
 import imgDepression from '../assets/Depression.webp';
 import imgHouseProtection from '../assets/house-protection.webp';
-import moonJourneyBg from '../assets/moon_journey_bg.png';
+import moonJourneyBg from '../assets/moon_journey_bg.webp';
 
 // Guruji & Testimonials
 import astrologerImg from '../assets/astrologer.webp';
@@ -77,7 +78,8 @@ function Counter({ end, duration = 1800, suffix = "" }) {
   return <span>{formatNum(count)}{suffix}</span>;
 }
 
-export default function Home({ navigateTo }) {
+export default function Home() {
+  const navigate = useNavigate();
   const [activeSlide, setActiveSlide] = useState(0);
   const [activeReviewPage, setActiveReviewPage] = useState(0);
   const [reviewsPerPage, setReviewsPerPage] = useState(4);
@@ -413,14 +415,14 @@ I would like to book a confidential consultation.
 
             <div style={{ display: 'flex', gap: '15px', flexWrap: 'wrap' }}>
               <button 
-                onClick={() => navigateTo('services')}
+                onClick={() => navigate('/services')}
                 className="primary-button"
                 style={{ boxShadow: '0 0 8px rgba(212, 175, 55, 0.25)' }}
               >
                 Explore Services {"->"}
               </button>
               <button 
-                onClick={() => navigateTo('book')}
+                onClick={() => navigate('/contact#book-session')}
                 className="glass-button"
                 style={{ boxShadow: 'none' }}
               >
@@ -519,7 +521,7 @@ I would like to book a confidential consultation.
                   backdropFilter: 'blur(5px)',
                   transition: 'all 0.3s ease'
                 }}
-                onClick={() => navigateTo('service-detail', slides[activeSlide].slug)}
+                onClick={() => navigate(`/services/${slides[activeSlide].slug}`)}
                 onMouseEnter={e => e.currentTarget.style.borderColor = 'var(--gold)'}
                 onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(212, 175, 55, 0.25)'}
               >
@@ -708,6 +710,7 @@ I would like to book a confidential consultation.
             <img 
               src={astrologerImg} 
               alt="Guruji Best Astrologer in London" 
+              loading="lazy"
               style={{
                 width: '100%',
                 maxWidth: '330px',
@@ -788,7 +791,7 @@ I would like to book a confidential consultation.
                   overflow: 'hidden',
                   borderRadius: '16px'
                 }}
-                onClick={() => navigateTo('service-detail', s.slug)}
+                onClick={() => navigate(`/services/${s.slug}`)}
               >
                 <div style={{
                   width: '100%',
@@ -800,6 +803,7 @@ I would like to book a confidential consultation.
                   <img 
                     src={serviceImages[s.slug]} 
                     alt={s.title} 
+                    loading="lazy"
                     style={{
                       width: '100%',
                       height: '100%',
